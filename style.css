@@ -1,0 +1,27 @@
+
+
+body	{
+    background-color: green; 
+    text-align: center;
+    
+    }
+
+
+    h1 		{
+    
+    font-family: Tahoma, sans-serif; 
+    }
+
+
+    h2		{
+    font-family: Tahoma, sans-serif;
+    
+    }
+
+
+    p 		{
+	
+		font-size: 120%;
+		font-family: Georgia, serif;
+		color: #ffffff;
+		}
