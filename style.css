@@ -23,5 +23,39 @@ body	{
 	
 		font-size: 120%;
 		font-family: Georgia, serif;
-		color: #ffffff;
+		color: black;
 		}
+    
+    
+    
+    #welcome	{
+      
+      background-color:#adff2f ;
+      width: 38%;
+      text-align: center;
+      margin:auto;
+      margin-top: 100px;
+      border-radius:10px;
+    }
+
+    #handicap  {
+
+      background-color: #adff2f;
+      width: 38%;
+      text-align: center;
+      margin-top: 100px;
+      border-radius:10px;
+      
+
+    }
+
+    #games  {
+      
+      background-color: #adff2f;
+      width: 38%;
+      text-align: center;
+      margin:;
+      margin-top: 100px;
+      border-radius:10px;
+      float: right;
+    }
