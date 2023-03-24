@@ -6,6 +6,40 @@ body	{
     
     }
 
+    #green {
+      position: relative;
+      
+    }
+
+
+
+    #green img {
+      max-width: 100%;
+      height: auto;
+      
+    }
+
+    
+    #green-text{
+      position: absolute;
+      color: white;
+      top: 50%
+      
+      
+
+    }
+
+    #green p {
+
+      width: 26%;
+      text-align: center;
+    }
+
+
+
+  
+
+
 
     h1 		{
     
@@ -21,40 +55,40 @@ body	{
 
     p 		{
 	
-		font-size: 120%;
-		font-family: Georgia, serif;
-		color: black;
-		}
-    
-    
-    
-    #welcome	{
-      
-      background-color:#adff2f ;
-      width: 38%;
+      font-size: 120%;
+      font-family: Georgia, serif;
+      color: white;
       text-align: center;
-      margin:auto;
-      margin-top: 100px;
-      border-radius:10px;
     }
+
+    
+    
+    
+  
 
     #handicap  {
 
       background-color: #adff2f;
-      width: 38%;
+      width: 34%;
       text-align: center;
       margin-top: 100px;
       border-radius:10px;
       
 
     }
+    
+    #handicap p {
+
+      color: black;
+    }
+
+
 
     #games  {
       
       background-color: #adff2f;
-      width: 38%;
+      width: 50%;
       text-align: center;
-      margin:;
       margin-top: 100px;
       border-radius:10px;
       float: right;
