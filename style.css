@@ -41,12 +41,6 @@
       text-align: center;
     }
 
-
-
-  
-
-
-
     h1 		{
     
     font-family: Tahoma, sans-serif; 
@@ -88,6 +82,11 @@
       color: black;
     }
 
+    #handicap h3 {
+      margin-top: 100px;
+      font-size: 140%;
+      
+    }
 
 
     #games  {
