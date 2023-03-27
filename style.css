@@ -1,4 +1,6 @@
-
+    
+      
+    
 
     body {
       background-color: green; 
@@ -41,10 +43,6 @@
     font-family: Tahoma, sans-serif;
     }
 
-    h4 {
-      font-size: 140%;
-    }
-
     p {
 	    font-size: 120%;
       font-family: Arial, Helvetica, sans-serif;
@@ -78,3 +76,32 @@
       float: right;
       
     }
+
+    #games h4, h5, h6, h7, h8 {
+      font-size: 140%;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    
+
+    @media (max-width: 500px) {
+      p {
+        font-size: 70%;
+      }
+      
+      h1, h2 {
+        font-size: 70%;
+      }
+      
+      #games h4, h5, h6, h7, h8 {
+        font-size: 70%;
+      }
+    
+      #handicap h3 {
+        font-size: 70%;
+      }
+    
+    }
+
+
+  
