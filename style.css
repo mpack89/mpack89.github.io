@@ -128,14 +128,23 @@
         font-size: 70%;
       }
       
-      #games h4, h5, h6, h7, h8, h9 {
+      #games h4, h5, h6, h7, h8 {
         font-size: 70%;
       }
     
       #handicap h3 {
         font-size: 70%;
       }
-    
+      
+      #facts h9 {
+       font-size: 70%;
+      }
+
+      ul {
+        font-size: 70%;
+
+      }
+
     }
 
 
