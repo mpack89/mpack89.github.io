@@ -64,7 +64,7 @@
 
     #handicap h3 {
       margin-top: 100px;
-      font-size: 140%;
+      font-size: 160%;
     }
 
     #games {
@@ -77,17 +77,47 @@
       
     }
 
-    #games h4, h5, h6, h7, h8 {
+    #games h4, h5, h6, h7, h8  {
       font-size: 140%;
       font-family: Arial, Helvetica, sans-serif;
     }
-
-     ul {
     
-      list-style-type: circle;
-      text-align: left;
+    #facts h9 {
+
+      font-size: 160%;
+      font-family: Arial, Helvetica, sans-serif;
 
     }
+
+    #facts {
+      margin-top: 100px;
+      background-color: #adff2f;
+      width: 50%;
+      border-radius: 10px;
+
+    }
+
+     ul {
+      font-size: 120%;
+      list-style-type: circle;
+      text-align: left;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #flexwrapper {
+
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      align-content: center;
+      
+    }
+
+    #facts {
+      flex-grow: 1;
+    }
+
 
     @media (max-width: 500px) {
       p {
@@ -98,7 +128,7 @@
         font-size: 70%;
       }
       
-      #games h4, h5, h6, h7, h8 {
+      #games h4, h5, h6, h7, h8, h9 {
         font-size: 70%;
       }
     
