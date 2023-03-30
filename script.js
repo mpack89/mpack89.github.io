@@ -18,21 +18,34 @@ function reset()
     document.getElementById("txtSum").value = "0";
 }
 
-function calculate()
-{
-    var num1 = Number(document.getElementById("txtNum1").value);
-    var num2 = Number(document.getElementById("txtNum2").value);
-    var num3 = Number(document.getElementById("txtNum3").value);
-    var num4 = Number(document.getElementById("txtNum4").value);
-    var num5 = Number(document.getElementById("txtNum5").value);
-    var num6 = Number(document.getElementById("txtNum6").value);
-    var num7 = Number(document.getElementById("txtNum7").value);
-    var num8 = Number(document.getElementById("txtNum8").value);
-    var num9 = Number(document.getElementById("txtNum9").value);
-    var num10 = Number(document.getElementById("txtNum10").value);
-    var num11 = Number(document.getElementById("txtNum11").value);
-    var num12 = Number(document.getElementById("txtNum12").value);
-    var sum = num1 + num2 + num3;
-    document.getElementById("txtSum").value = String(sum);
-}
 
+function calculate(event) // event tells it to wait for something to happen before running 
+
+{
+    var form= document.getElementById('form')
+    // form.addEventListener('submit',function(event)
+
+    event.preventDefault()// must add when using an event so it doesnt auto run
+    var num1 = document.getElementById("num1").value
+    var num2 = document.getElementById("num2").value
+    var num3 = document.getElementById("num3").value
+    var num4 = document.getElementById("num4").value
+    var num5 = document.getElementById("num5").value
+    var num6 = document.getElementById("num6").value
+    var num7 = document.getElementById("num7").value
+    var num8 = document.getElementById("num8").value
+    var num9 = document.getElementById("num9").value
+    var num10 = document.getElementById("num10").value
+    var num11 = document.getElementById("num11").value
+    var num12 = document.getElementById("num12").value
+
+
+
+
+    console.log(num1,num2,num3,num4, num5, num6, num7, num8, num9, num10, num11, num12)
+
+    var valuearray = [num1, num2, num3, num4, num5, num6, num7, num8, num9, num10, num11, num12];
+    console.log(valuearray.sort())
+
+
+}

@@ -56,49 +56,28 @@
           Enter your strokes above par per round, for the last 12 rounds you've
           played
         </p>
-
-        <label for="txtNum1">Score 1:</label><br />
-        <input type="text" id="txtNum1" value="0" /><br />
-
-        <label for="txtNum2">Score 2:</label><br />
-        <input type="text" id="txtNum2" value="0" /><br />
-
-        <label for="txtNum3">Score 3:</label><br />
-        <input type="text" id="txtNum3" value="0" /><br />
-
-        <label for="txtNum4">Score 4:</label><br />
-        <input type="text" id="txtNum4" value="0" /><br />
-
-        <label for="txtNum5">Score 5:</label><br />
-        <input type="text" id="txtNum5" value="0" /><br />
-
-        <label for="txtNum6">Score 6:</label><br />
-        <input type="text" id="txtNum6" value="0" /><br />
-
-        <label for="txtNum7">Score 7:</label><br />
-        <input type="text" id="txtNum7" value="0" /><br />
-
-        <label for="txtNum8">Score 8:</label><br />
-        <input type="text" id="txtNum8" value="0" /><br />
-
-        <label for="txtNum9">Score 9:</label><br />
-        <input type="text" id="txtNum9" value="0" /><br />
-
-        <label for="txtNum10">Score 10:</label><br />
-        <input type="text" id="txtNum10" value="0" /><br />
-
-        <label for="txtNum11">Score 11:</label><br />
-        <input type="text" id="txtNum11" value="0" /><br />
-
-        <label for="txtNum12">Score 12:</label><br />
-        <input type="text" id="txtNum12" value="0" /><br />
-
-        <label for="txtSum">Handicap:</label><br />
-        <input type="text" id="txtSum" value="0" disabled /><br /><br />
-
-        <input type="button" value="Calculate" onclick="calculate()" />
-        <input type="button" value="Reset" onclick="reset()" />
       
+        <form id="form">
+          
+          <input type="text" id="num1" required>
+          <input type="text" id="num2" required>
+          <input type="text" id="num3" required>
+          <input type="text" id="num4" required>
+          <input type="text" id="num5" required>
+          <input type="text" id="num6" required>
+          <input type="text" id="num7" required>
+          <input type="text" id="num8" required>
+          <input type="text" id="num9" required>
+          <input type="text" id="num10" required>
+          <input type="text" id="num11" required>
+          <input type="text" id="num12" required>
+
+          <button onclick="reset()">reset</button>
+          <button onclick="calculate(event)">calculate</button> 
+        </form>  
+
+      
+        
     </div>
       <div id="games">
         <h4>Golf Games To Play With Friends!</h4>
