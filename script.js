@@ -38,14 +38,28 @@ function calculate(event) // event tells it to wait for something to happen befo
     var num10 = document.getElementById("num10").value
     var num11 = document.getElementById("num11").value
     var num12 = document.getElementById("num12").value
-
-
-
-
+    
     console.log(num1,num2,num3,num4, num5, num6, num7, num8, num9, num10, num11, num12)
 
     var valuearray = [num1, num2, num3, num4, num5, num6, num7, num8, num9, num10, num11, num12];
-    console.log(valuearray.sort())
 
 
+    var sorted = valuearray.sort((a,b) => {
+        return a - b;});
+    
+    var low = (sorted.slice(0,6));
+    
+    
+
+    console.log(low)
+    
+    var handicap = low.reduce((acc, curVal) => {
+        return Number(acc) + Number(curVal);
+      });
+    
+    console.log(handicap)
+    
+    var sum = (handicap / 6)
+
+    document.getElementById("txtSum").value =(sum)
 }
