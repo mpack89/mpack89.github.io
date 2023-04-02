@@ -1,5 +1,3 @@
-
-
 function reset()
 
 {
@@ -43,12 +41,15 @@ function calculate(event) // event tells it to wait for something to happen befo
 
     var valuearray = [num1, num2, num3, num4, num5, num6, num7, num8, num9, num10, num11, num12];
 
-
+    
     var sorted = valuearray.sort((a,b) => {
         return a - b;});
     
-    var low = (sorted.slice(0,6));
+    var middle = Math.floor(sorted.length / 2);
+
+    var low = sorted.slice(0,middle);
     
+    console.log(middle);
     
 
     console.log(low)
