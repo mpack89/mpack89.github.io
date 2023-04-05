@@ -72,11 +72,15 @@ p {
   float: right;
 }
 
-#games h4,
-h5,
-h6,
-h7,
-h8
+#games h4
+{
+  font-size: 170%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+#games h5
 
 {
   font-size: 150%;
@@ -87,7 +91,7 @@ h8
 
 
 
-#facts h9 {
+#facts h5 {
   font-size: 160%;
   font-family: Arial, Helvetica, sans-serif;
 }
