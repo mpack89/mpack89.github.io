@@ -58,14 +58,18 @@
         </p>
       
         <form id="form">
-          
+          <div id="golf">
           <input type="text" id="score" required>
-          
-          
+        </div>
+        <div id="entry">
           <button onclick="addInput(event)">Enter</button>
+        </div>
+
+        <div id="handi">
+          <button onclick="reset(event)">Reset</button>
           <button onclick="calculate(event)">Calculate Handicap</button> 
-          <label for="txtSum"></label><br/>
           <input type="text" id="txtSum" value="0" disabled/><br/><br/>
+          </div>
         </form>  
 
       
