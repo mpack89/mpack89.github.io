@@ -1,5 +1,12 @@
 
 
+function reset(event){
+  event.preventDefault();
+  const element = document.getElementById("form");
+  element.reset();
+ 
+}
+
 function addInput(event) {
   event.preventDefault();
   var form = document.getElementById("form");
@@ -21,8 +28,7 @@ function calculate(event) {
       scorearray.push(input.value);
     }
   });
-
-  console.log(scorearray);
+  
   event.preventDefault();
   
 
