@@ -1,15 +1,22 @@
+function remove(event){
+event.preventDefault();
+ var ball = document.getElementById("golf");
+ Array.from(ball.children).forEach((input, index) => {
+  if (
+    index !== 0
+  ) {
+    input.remove();
+  }
+});
 
+var scores = document.getElementById("form");
+scores.reset();
 
-function reset(event){
-  event.preventDefault();
-  const element = document.getElementById("form");
-  element.reset();
- 
 }
 
 function addInput(event) {
   event.preventDefault();
-  var form = document.getElementById("form");
+  var form = document.getElementById("golf");
   var newInput = document.createElement("input");
   newInput.type = "text";
   form.appendChild(newInput);
@@ -28,26 +35,22 @@ function calculate(event) {
       scorearray.push(input.value);
     }
   });
-  
+
   event.preventDefault();
-  
 
   var sorted = scorearray.sort((a, b) => {
     return a - b;
   });
 
-  console.log(sorted)
   var middle = Math.floor(sorted.length / 2);
 
-  console.log(middle)
   var low = sorted.slice(0, middle);
 
-  console.log(low)
   var handicap = low.reduce((acc, curVal) => {
     return Number(acc) + Number(curVal);
   });
 
-  console.log(handicap)
+  console.log(handicap);
   var sum = handicap / low.length;
 
   document.getElementById("txtSum").value = sum;
