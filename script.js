@@ -1,17 +1,14 @@
-function remove(event){
-event.preventDefault();
- var ball = document.getElementById("golf");
- Array.from(ball.children).forEach((input, index) => {
-  if (
-    index !== 0
-  ) {
-    input.remove();
-  }
-});
+function remove(event) {
+  event.preventDefault();
+  var ball = document.getElementById("golf");
+  Array.from(ball.children).forEach((input, index) => {
+    if (index !== 0) {
+      input.remove();
+    }
+  });
 
-var scores = document.getElementById("form");
-scores.reset();
-
+  var scores = document.getElementById("form");
+  scores.reset();
 }
 
 function addInput(event) {

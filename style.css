@@ -82,7 +82,9 @@ p {
 #form {
   display: flex;
   flex-direction: column;
+  
 }
+
 
 
 input[type="text"] {
@@ -91,7 +93,6 @@ input[type="text"] {
 }
 #form button {
   background-color: #4caf50;
-  border: none;
   color: white;
   padding: 10px 26px;
   text-align: center;
@@ -100,7 +101,7 @@ input[type="text"] {
   font-size: 12px;
   margin: 4px 2px;
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 20px;
   width: 20%;
 }
 
@@ -172,4 +173,13 @@ ul {
   ul {
     font-size: 70%;
   }
+
+  #handi button, #entry button {
+
+    font-size: 40%;
+    width: 46%;
+
+  }
+
+
 }
