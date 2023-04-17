@@ -62,6 +62,11 @@ const options = {
 };
 
 fetch('https://golf-leaderboard-data.p.rapidapi.com/world-rankings', options)
-	.then(response => response.json())
-	.then(response => console.log(response))
-	.catch(err => console.error(err));
+	.then(data =>  { 
+  return data.json();
+
+})
+.then((objectData)=> {
+    console.log(objectData);
+  })
+	.catch(err => console.log(err));
