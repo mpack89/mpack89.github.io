@@ -61,12 +61,19 @@ const options = {
 	}
 };
 
-fetch('https://golf-leaderboard-data.p.rapidapi.com/world-rankings', options)
-	.then(data =>  { 
-  return data.json();
+const api_url = 'https://golf-leaderboard-data.p.rapidapi.com/world-rankings'
 
-})
-.then((objectData)=> {
-    console.log(objectData);
-  })
-	.catch(err => console.log(err));
+async function getLeader() {
+
+const response = await fetch(api_url, options);
+const data = await response.json();
+const lead = data.results
+console.log(lead.rankings[0])
+}
+
+getLeader();
+
+
+
+
+
