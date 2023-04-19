@@ -54,26 +54,24 @@ function calculate(event) {
 }
 
 const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': '0bdfae4b32msh944cce92bea9b3ap1ab133jsn438ada11b9cb',
-		'X-RapidAPI-Host': 'golf-leaderboard-data.p.rapidapi.com'
-	}
+  method: "GET",
+  headers: {
+    "X-RapidAPI-Key": "0bdfae4b32msh944cce92bea9b3ap1ab133jsn438ada11b9cb",
+    "X-RapidAPI-Host": "golf-leaderboard-data.p.rapidapi.com",
+  },
 };
 
-const api_url = 'https://golf-leaderboard-data.p.rapidapi.com/world-rankings'
+const api_url = "https://golf-leaderboard-data.p.rapidapi.com/world-rankings";
 
 async function getLeader() {
-
-const response = await fetch(api_url, options);
-const data = await response.json();
-const lead = data.results
-console.log(lead.rankings[0])
+  const response = await fetch(api_url, options);
+  const data = await response.json();
+  const lead = data.results;
+  const rank = lead.rankings.slice(0, 4);
+  const names = rank.map((player) => {
+    return player.player_name;
+  });
+  console.log(names);
 }
 
 getLeader();
-
-
-
-
-
