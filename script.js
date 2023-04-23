@@ -61,9 +61,11 @@ const options = {
   },
 };
 
-const api_url = "https://golf-leaderboard-data.p.rapidapi.com/world-rankings";
 
+const api_url = "https://golf-leaderboard-data.p.rapidapi.com/world-rankings";
 async function getLeader() {
+  
+ 
   const response = await fetch(api_url, options);
   const data = await response.json();
   const lead = data.results;
@@ -71,7 +73,44 @@ async function getLeader() {
   const names = rank.map((player) => {
     return player.player_name;
   });
+
+
   console.log(names);
+
+  
 }
 
+
+
+
+
+
 getLeader();
+
+
+
+// rank.forEach((player, index) => {
+//   console.log(player);
+//   const name = player.player_name;
+//   console.log(name);
+//   console.log(index.0);
+
+
+
+// fetch('https://golf-leaderboard-data.p.rapidapi.com/world-rankings', options)
+// 	.then(response =>  {
+//   return response.json();
+
+// })
+// .then(data=> {
+//     console.log(data);
+//     displayLeader(data)
+//   })
+// .catch((error) => console.error(error));
+
+// function displayLeader(data) {
+//   const leader = data.rankings[0];
+//   const leaderDiv = document.getElementById(player_name);
+//   console.log(leaderDiv);
+// }
+
