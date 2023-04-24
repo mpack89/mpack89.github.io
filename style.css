@@ -171,19 +171,11 @@ input[type="text"] {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-#mygolf {
-  font-size: 120%;
-  font-family: Arial, Helvetica, sans-serif;
+#leader {
   background-color: #adff2f;
   width: 18%;
   border-radius: 10px;
   margin: auto;
-}
-
-#mygolf p {
-  text-align: center;
-  font-size: 120%;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 #flexwrapper {
@@ -192,6 +184,10 @@ input[type="text"] {
   align-items: center;
   flex-wrap: wrap;
   align-content: center;
+}
+
+#myList {
+  list-style-type: decimal;
 }
 
 @media (max-width: 500px) {
