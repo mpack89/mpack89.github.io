@@ -66,7 +66,7 @@ async function getLeader() {
   const response = await fetch(api_url, options);
   const data = await response.json();
   const lead = data.results;
-  const rank = lead.rankings.slice(0, 25);
+  const rank = lead.rankings.slice(0, 20);
   const names = rank.map((player) => {
     return player.player_name;
   });
