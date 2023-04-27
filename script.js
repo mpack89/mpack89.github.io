@@ -78,29 +78,25 @@ async function getLeader() {
   });
 }
 
-//getLeader();
+getLeader();
 
-// function add(event) {
-//   event.preventDefault();
-//   var swing = document.getElementById("fronts");
-//   swing.appendChild(swing);
-// }
+function front(event) {
+  event.preventDefault();
+  const card = document.getElementById("fronts");
+  const scorecards = [];
+  Array.from(card.elements).forEach((inputs) => {
+    if (
+      inputs.type === "text" &&
+      inputs.disabled === false &&
+      inputs.value !== ""
+    ) {
+      scorecards.push(inputs.value);
+    }
+  });
 
-// function front(event) {
-// event.preventDefault();
-// const card = document.getElementById("fronts");
-// const scorecards = [];
-//   Array.from(card.elements).forEach((inputs) => {
-//     if (
-//       inputs.type === "text" &&
-//       inputs.disabled === false &&
-//       inputs.value !== ""
-//     ) {
-//       scorecards.push(inputs.value);
-//     }
-//   });}
-  
-//     const thesum = scorecards.reduce((a, b) => { a + b, 0 });
-   
-//     document.getElementById("front9").value = thesum;
-  
+  const thesum = scorecards.reduce((acc, curVal) => {
+    return Number(acc) + Number(curVal);
+  });
+
+  document.getElementById("front9").value = thesum;
+}
