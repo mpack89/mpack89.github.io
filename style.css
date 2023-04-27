@@ -198,6 +198,42 @@ input[type="text"] {
   list-style-type: decimal;
 }
 
+#scorecard input[type="text"] {
+  width: 30%;
+  margin: 10px 6px;
+}
+
+#scorecard tr:nth-child(1){
+
+  background-color: white;
+}
+#scorecard tr:nth-child(2){
+
+  background-color: gold;
+}
+#scorecard tr:nth-child(3){
+
+  background-color: blue;
+}
+#scorecard tr:nth-child(4){
+
+  background-color: white;
+}
+#scorecard tr:nth-child(4){
+
+  background-color: white;
+}
+#scorecard tr:nth-child(5){
+
+  background-color: grey;
+}
+#scorecard tr:nth-child(6){
+
+  background-color: black;
+  color: white;
+}
+
+
 @media (max-width: 500px) {
   p {
     font-size: 70%;
