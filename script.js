@@ -47,7 +47,6 @@ function calculate(event) {
     return Number(acc) + Number(curVal);
   });
 
-  console.log(handicap);
   var sum = handicap / low.length;
 
   document.getElementById("txtSum").value = sum;
@@ -80,3 +79,28 @@ async function getLeader() {
 }
 
 //getLeader();
+
+// function add(event) {
+//   event.preventDefault();
+//   var swing = document.getElementById("fronts");
+//   swing.appendChild(swing);
+// }
+
+// function front(event) {
+// event.preventDefault();
+// const card = document.getElementById("fronts");
+// const scorecards = [];
+//   Array.from(card.elements).forEach((inputs) => {
+//     if (
+//       inputs.type === "text" &&
+//       inputs.disabled === false &&
+//       inputs.value !== ""
+//     ) {
+//       scorecards.push(inputs.value);
+//     }
+//   });}
+  
+//     const thesum = scorecards.reduce((a, b) => { a + b, 0 });
+   
+//     document.getElementById("front9").value = thesum;
+  
