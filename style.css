@@ -198,6 +198,46 @@ input[type="text"] {
   list-style-type: decimal;
 }
 
+#scorecard input[type="text"] {
+  width: 36%;
+  margin: 10px 6px;
+}
+
+#scorecard tr:nth-child(1){
+
+  background-color: white;
+}
+#scorecard tr:nth-child(2){
+
+  background-color: gold;
+}
+#scorecard tr:nth-child(3){
+
+  background-color: rgb(0, 119, 255);
+}
+#scorecard tr:nth-child(4){
+
+  background-color: white;
+}
+#scorecard tr:nth-child(4){
+
+  background-color: white;
+}
+#scorecard tr:nth-child(5){
+
+  background-color: rgb(128, 128, 128);
+}
+#scorecard tr:nth-child(6){
+
+  background-color: black;
+  color: white;
+}
+#scorecard tr:nth-child(7){
+
+  background-color: white;
+  
+}
+
 @media (max-width: 500px) {
   p {
     font-size: 70%;
@@ -232,3 +272,4 @@ input[type="text"] {
     width: 46%;
   }
 }
+
