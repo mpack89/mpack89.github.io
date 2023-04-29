@@ -100,3 +100,30 @@ function front(event) {
 
   document.getElementById("front9").value = thesum;
 }
+
+
+
+function back(event) {
+event.preventDefault();
+const cards = document.getElementById("back");
+const scorecardsback = [];
+Array.from(cards.elements).forEach((inputs) => {
+  if (
+    inputs.type === "text" &&
+    inputs.disabled === false &&
+    inputs.value !== ""
+  ) {
+    scorecardsback.push(inputs.value);
+  }
+});
+
+const thesumback = scorecardsback.reduce((acc, curVal) => {
+  return Number(acc) + Number(curVal);
+});
+
+document.getElementById("back9").value = thesumback;
+}
+
+
+
+
