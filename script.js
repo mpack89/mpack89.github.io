@@ -101,29 +101,62 @@ function front(event) {
   document.getElementById("front9").value = thesum;
 }
 
-
-
 function back(event) {
-event.preventDefault();
-const cards = document.getElementById("back");
-const scorecardsback = [];
-Array.from(cards.elements).forEach((inputs) => {
-  if (
-    inputs.type === "text" &&
-    inputs.disabled === false &&
-    inputs.value !== ""
-  ) {
-    scorecardsback.push(inputs.value);
-  }
-});
+  event.preventDefault();
+  const cards = document.getElementById("back");
+  const scorecardsback = [];
+  Array.from(cards.elements).forEach((inputs) => {
+    if (
+      inputs.type === "text" &&
+      inputs.disabled === false &&
+      inputs.value !== ""
+    ) {
+      scorecardsback.push(inputs.value);
+    }
+  });
 
-const thesumback = scorecardsback.reduce((acc, curVal) => {
-  return Number(acc) + Number(curVal);
-});
+  const thesumback = scorecardsback.reduce((acc, curVal) => {
+    return Number(acc) + Number(curVal);
+  });
 
-document.getElementById("back9").value = thesumback;
+  document.getElementById("back9").value = thesumback;
 }
 
+function total(event) {
+  event.preventDefault();
+  const card = document.getElementById("fronts");
+  const scorecards = [];
+  Array.from(card.elements).forEach((inputs) => {
+    if (
+      inputs.type === "text" &&
+      inputs.disabled === false &&
+      inputs.value !== ""
+    ) {
+      scorecards.push(inputs.value);
+    }
+  });
 
+  const thesum = scorecards.reduce((acc, curVal) => {
+    return Number(acc) + Number(curVal);
+  });
 
+  const cards = document.getElementById("back");
+  const scorecardsback = [];
+  Array.from(cards.elements).forEach((inputs) => {
+    if (
+      inputs.type === "text" &&
+      inputs.disabled === false &&
+      inputs.value !== ""
+    ) {
+      scorecardsback.push(inputs.value);
+    }
+  });
 
+  const thesumback = scorecardsback.reduce((acc, curVal) => {
+    return Number(acc) + Number(curVal);
+  });
+
+  const final = thesumback + thesum;
+
+  document.getElementById("round").value = final;
+}
