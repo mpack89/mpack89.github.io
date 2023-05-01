@@ -78,7 +78,7 @@ async function getLeader() {
   });
 }
 
-getLeader();
+//getLeader();
 
 function front(event) {
   event.preventDefault();
@@ -121,6 +121,7 @@ function back(event) {
 
   document.getElementById("back9").value = thesumback;
 }
+
 
 function total(event) {
   event.preventDefault();
