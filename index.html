@@ -192,6 +192,7 @@
     </div>
     <div id="scorecard">
       <table style="width:50%">
+        <h1>Glendenning Golf Club</h1>
         <tr id="holes">
           <th>Hole </th>
           <th>1</th>
@@ -336,7 +337,7 @@
           <td>3</td>
           <td>5</td>
           <td>35</td>
-          <td></td>
+          <td>71</td>
         </tr>  
         
           <tr>
@@ -350,8 +351,8 @@
           <td><input type="text" id="hole6" required></td>
           <td><input type="text" id="hole7" required></td>
           <td><input type="text" id="hole8" required></td>
-          <td><input type="text" id="hole9" required></td>
-          <td><input type="text" id="front9" value="" disabled/><button onclick="front(event)">🗸</button></td>
+          <td><input type="text" oninput="front(event)" id="hole9" required></td>
+          <td><input type="text" id="front9" value="" disabled/></td>
           </form>
           <form id="back">
           <td><input type="text" id="hole10" required></td>
@@ -362,9 +363,9 @@
           <td><input type="text" id="hole15" required></td>
           <td><input type="text" id="hole16" required></td>
           <td><input type="text" id="hole17" required></td>
-          <td><input type="text" id="hole18" required></td>
-          <td><input type="text" id="back9" value="" disabled/><button onclick="back(event)">🗸</button></td>
-          <td><input type="text" id="round" value="" disabled/><button onclick="total(event)">🗸</button></td>
+          <td><input type="text" oninput="back(event), total(event)" id="hole18" required></td>
+          <td><input type="text" id="back9" value="" disabled/></td>
+          <td><input type="text" id="round" value="" disabled/></td>
           </form>
         </div>
         </tr>

@@ -4,6 +4,8 @@ body {
 }
 
 
+
+
 #nav ul {
   list-style-type: none;
   margin: 10px;
@@ -198,6 +200,17 @@ input[type="text"] {
   list-style-type: decimal;
 }
 
+#scorecard h1 {
+    
+  background-color: white;
+  width: 50%;
+  margin: 0;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  border-color: black;
+  border
+
+}
 #scorecard input[type="text"] {
   width: 36%;
   margin: 10px 6px;
