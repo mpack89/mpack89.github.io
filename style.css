@@ -3,9 +3,6 @@ body {
   text-align: center;
 }
 
-
-
-
 #nav ul {
   list-style-type: none;
   margin: 10px;
@@ -14,7 +11,6 @@ body {
   background-color: #adff2f;
   border-radius: 10px;
   height: 50px;
-  
 }
 
 #nav li {
@@ -37,7 +33,6 @@ body {
   padding: 2px 160px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 154%;
-
 }
 
 #nav li a:hover {
@@ -201,54 +196,53 @@ input[type="text"] {
 }
 
 #scorecard h1 {
-    
   background-color: white;
   width: 50%;
   margin: 0;
   text-align: left;
   font-family: Arial, Helvetica, sans-serif;
   border-color: black;
-  border
-
+  border: 2px solid;
 }
+
+th,
+td {
+  border: 1px solid;
+}
+
+table {
+  background-color: black;
+}
+
 #scorecard input[type="text"] {
   width: 36%;
   margin: 10px 6px;
 }
 
-#scorecard tr:nth-child(1){
-
+#scorecard tr:nth-child(1) {
   background-color: white;
 }
-#scorecard tr:nth-child(2){
-
+#scorecard tr:nth-child(2) {
   background-color: gold;
 }
-#scorecard tr:nth-child(3){
-
-  background-color: rgb(0, 119, 255);
+#scorecard tr:nth-child(3) {
+  background-color: rgb(56, 145, 247);
 }
-#scorecard tr:nth-child(4){
-
+#scorecard tr:nth-child(4) {
   background-color: white;
 }
-#scorecard tr:nth-child(4){
-
+#scorecard tr:nth-child(4) {
   background-color: white;
 }
-#scorecard tr:nth-child(5){
-
-  background-color: rgb(128, 128, 128);
+#scorecard tr:nth-child(5) {
+  background-color: rgb(196, 193, 193);
 }
-#scorecard tr:nth-child(6){
-
+#scorecard tr:nth-child(6) {
   background-color: black;
   color: white;
 }
-#scorecard tr:nth-child(7){
-
+#scorecard tr:nth-child(7) {
   background-color: white;
-  
 }
 
 @media (max-width: 500px) {
@@ -285,4 +279,3 @@ input[type="text"] {
     width: 46%;
   }
 }
-
