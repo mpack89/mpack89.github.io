@@ -212,10 +212,14 @@ td {
 
 table {
   background-color: black;
+  width: 50%;
 }
-
+#scorecard button {
+  margin-left: 480px;
+  background-color: pink;
+}
 #scorecard input[type="text"] {
-  width: 36%;
+  width: 38%;
   margin: 10px 6px;
 }
 

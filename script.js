@@ -122,7 +122,6 @@ function back(event) {
   document.getElementById("back9").value = thesumback;
 }
 
-
 function total(event) {
   event.preventDefault();
   const card = document.getElementById("fronts");
@@ -160,4 +159,12 @@ function total(event) {
   const final = thesumback + thesum;
 
   document.getElementById("round").value = final;
+}
+
+function clearscores(event) {
+  event.preventDefault();
+  if (confirm("Are you sure?")) {
+    document.getElementById("back").reset();
+    document.getElementById("fronts").reset();
+  }
 }
