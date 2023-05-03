@@ -78,11 +78,11 @@ async function getLeader() {
   });
 }
 
-//getLeader();
+getLeader();
 
-function front(event) {
+function calculateRound(event, inputId, totalId) {
   event.preventDefault();
-  const card = document.getElementById("fronts");
+  const card = document.getElementById(inputId);
   const scorecards = [];
   Array.from(card.elements).forEach((inputs) => {
     if (
@@ -98,33 +98,12 @@ function front(event) {
     return Number(acc) + Number(curVal);
   });
 
-  document.getElementById("front9").value = thesum;
+  document.getElementById(totalId).value = thesum;
 }
 
-function back(event) {
+function total(event, inputId, inputId2, totalId) {
   event.preventDefault();
-  const cards = document.getElementById("back");
-  const scorecardsback = [];
-  Array.from(cards.elements).forEach((inputs) => {
-    if (
-      inputs.type === "text" &&
-      inputs.disabled === false &&
-      inputs.value !== ""
-    ) {
-      scorecardsback.push(inputs.value);
-    }
-  });
-
-  const thesumback = scorecardsback.reduce((acc, curVal) => {
-    return Number(acc) + Number(curVal);
-  });
-
-  document.getElementById("back9").value = thesumback;
-}
-
-function total(event) {
-  event.preventDefault();
-  const card = document.getElementById("fronts");
+  const card = document.getElementById(inputId);
   const scorecards = [];
   Array.from(card.elements).forEach((inputs) => {
     if (
@@ -140,7 +119,7 @@ function total(event) {
     return Number(acc) + Number(curVal);
   });
 
-  const cards = document.getElementById("back");
+  const cards = document.getElementById(inputId2);
   const scorecardsback = [];
   Array.from(cards.elements).forEach((inputs) => {
     if (
@@ -158,13 +137,19 @@ function total(event) {
 
   const final = thesumback + thesum;
 
-  document.getElementById("round").value = final;
+  document.getElementById(totalId).value = final;
 }
 
 function clearscores(event) {
   event.preventDefault();
   if (confirm("Are you sure?")) {
+    document.getElementById("front").reset();
     document.getElementById("back").reset();
-    document.getElementById("fronts").reset();
+    document.getElementById("player2front").reset();
+    document.getElementById("player2back").reset();
+    document.getElementById("player3front").reset();
+    document.getElementById("player3back").reset();
+    document.getElementById("player4front").reset();
+    document.getElementById("player4back").reset();
   }
 }
