@@ -65,7 +65,7 @@ async function getLeader() {
   const response = await fetch(api_url, options);
   const data = await response.json();
   const lead = data.results;
-  const rank = lead.rankings.slice(0, 20);
+  const rank = lead.rankings.slice(0, 99);
   const names = rank.map((player) => {
     return player.player_name;
   });
@@ -76,9 +76,11 @@ async function getLeader() {
     li.innerText = item;
     list.appendChild(li);
   });
+  
 }
 
-//getLeader();
+
+getLeader();
 
 function calculateRound(event, inputId, totalId) {
   event.preventDefault();
@@ -158,8 +160,105 @@ function clearScores(event) {
   }
 }
 
+function show_hide0() {
+  {
+    document.getElementById("green").style.display = "block";
+    document.getElementById("handicap").style.display = "none";
+    document.getElementById("games").style.display = "none";
+    document.getElementById("facts").style.display = "none";
+    document.getElementById("leader").style.display = "none";
+    document.getElementById("scorecard").style.display = "none";
 
+    return;
+  }
+}
 
+function show_hide() {
+  {
+    document.getElementById("green").style.display = "block";
+    document.getElementById("handicap").style.display = "none";
+    document.getElementById("games").style.display = "none";
+    document.getElementById("facts").style.display = "none";
+    document.getElementById("leader").style.display = "none";
+    document.getElementById("scorecard").style.display = "none";
 
+    return;
+  }
+}
 
+function show_hide2() {
+  {
+    document.getElementById("scorecard").style.display = "block";
+    document.getElementById("handicap").style.display = "none";
+    document.getElementById("games").style.display = "none";
+    document.getElementById("facts").style.display = "none";
+    document.getElementById("leader").style.display = "none";
+    document.getElementById("green").style.display = "none";
 
+    return;
+  }
+}
+
+function show_hide3() {
+  {
+    document.getElementById("handicap").style.display = "block";
+    document.getElementById("scorecard").style.display = "none";
+    document.getElementById("games").style.display = "none";
+    document.getElementById("facts").style.display = "none";
+    document.getElementById("leader").style.display = "none";
+    document.getElementById("green").style.display = "none";
+
+    return;
+  }
+}
+
+function show_hide4() {
+  {
+    document.getElementById("handicap").style.display = "none";
+    document.getElementById("scorecard").style.display = "none";
+    document.getElementById("games").style.display = "block";
+    document.getElementById("facts").style.display = "none";
+    document.getElementById("leader").style.display = "none";
+    document.getElementById("green").style.display = "none";
+
+    return;
+  }
+}
+function show_hide5() {
+  {
+    document.getElementById("handicap").style.display = "none";
+    document.getElementById("scorecard").style.display = "none";
+    document.getElementById("games").style.display = "none";
+    document.getElementById("facts").style.display = "block";
+    document.getElementById("leader").style.display = "none";
+    document.getElementById("green").style.display = "none";
+
+    return;
+  }
+}
+
+function show_hide6() {
+  {
+    document.getElementById("handicap").style.display = "none";
+    document.getElementById("scorecard").style.display = "none";
+    document.getElementById("games").style.display = "none";
+    document.getElementById("facts").style.display = "none";
+    document.getElementById("leader").style.display = "block";
+    document.getElementById("green").style.display = "none";
+
+    return;
+  }
+}
+
+function show_hide7() {
+  {
+    document.getElementById("handicap").style.display = "none";
+    document.getElementById("scorecard").style.display = "none";
+    document.getElementById("games").style.display = "none";
+    document.getElementById("facts").style.display = "none";
+    document.getElementById("leader").style.display = "block";
+    document.getElementById("green").style.display = "none";
+
+    return;
+  }
+}
