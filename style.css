@@ -1,5 +1,5 @@
 body {
-  background-color: green;
+  background-color: white;
   text-align: center;
 }
 
@@ -8,13 +8,15 @@ body {
   margin: 10px;
   padding: 0;
   overflow: hidden;
-  background-color: #adff2f;
-  border-radius: 10px;
+  background-color: white;
+  border-radius: 0;
   height: 50px;
+  text-align: center;
 }
 
 #nav li {
-  float: left;
+  text-align: center;
+  display: inline;
 }
 
 #nav li a {
@@ -23,22 +25,14 @@ body {
   text-align: center;
   padding: 18px 40px;
   text-decoration: none;
-  font-size: 120%;
+  font-size: 96%;
   font-family: Arial, Helvetica, sans-serif;
-}
-
-#nav h1 {
-  float: right;
-  text-align: right;
-  padding: 2px 160px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 154%;
+  margin-top: 12px;
 }
 
 #nav li a:hover {
-  background-color: rgb(56, 190, 56);
+  font-weight: bold;
 }
-
 #green {
   position: relative;
 }
@@ -83,21 +77,24 @@ p {
 }
 
 #handicap {
-  background-color: #adff2f;
+  background-color: white;
   width: 40%;
-  text-align: left;
-  margin-top: 100px;
+  text-align: center;
+  margin-top: 4px;
   padding: 10px 30px 30px 30px;
   border-radius: 10px;
+  border-style: solid;
 }
 
 #handicap p {
   color: black;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #handicap h3 {
-  margin-top: 100px;
-  font-size: 160%;
+  margin-top: 0px;
+  font-size: 140%;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #calculator,
@@ -108,10 +105,11 @@ p {
 #games {
   display: flex;
   flex-direction: column;
-  background-color: #adff2f;
-  width: 40%;
+  background-color: white;
+  border-style: solid;
+  width: 80%;
   text-align: left;
-  margin-top: 60px;
+  margin-top: 4px;
   padding: 10px 30px 30px 30px;
   border-radius: 10px;
 }
@@ -138,8 +136,8 @@ input[type="text"] {
   margin: 10px 6px;
 }
 #form button {
-  background-color: #4caf50;
-  color: white;
+  background-color: silver;
+  color: black;
   padding: 10px 26px;
   text-align: center;
   text-decoration: none;
@@ -148,6 +146,7 @@ input[type="text"] {
   margin: 4px 2px;
   cursor: pointer;
   width: 20%;
+  border-radius: 14px;
 }
 
 #handi {
@@ -161,7 +160,8 @@ input[type="text"] {
 
 #facts {
   margin-top: 100px;
-  background-color: #adff2f;
+  background-color: white;
+  border-style: double;
   width: 50%;
   padding: 10px 30px 30px 30px;
   border-radius: 10px;
@@ -175,14 +175,19 @@ input[type="text"] {
 }
 
 #leader {
-  background-color: #adff2f;
-  width: 18%;
+  background-color: white;
+  width: 76%;
   border-radius: 10px;
-  margin: auto;
-  font-size: 120%;
+  margin: 50px;
+  font-size: 96%;
   font-family: Arial, Helvetica, sans-serif;
+  border-style: groove;
+  font-weight: bold;
 }
 
+#leader ul {
+  column-count: 6;
+}
 #flexwrapper {
   display: flex;
   justify-content: space-around;
@@ -196,9 +201,11 @@ input[type="text"] {
 }
 
 #scorecard h1 {
+  display: flex;
+  align-content: center;
   background-color: white;
-  width: 50%;
-  margin: 0;
+  width: 100%;
+  margin: auto;
   text-align: left;
   font-family: Arial, Helvetica, sans-serif;
   border-color: black;
@@ -212,10 +219,9 @@ td {
 
 table {
   background-color: black;
-  width: 50%;
+  width: 100%;
 }
 #scorecard button {
-  
   background-color: black;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
@@ -228,6 +234,13 @@ table {
 #scorecard input[type="text"] {
   width: 54%;
   margin: 4px 2px;
+}
+
+#scorecard {
+  margin-top: 10%;
+  align-self: center;
+  border-style: solid;
+  width: 50%;
 }
 
 #scorecard tr:nth-child(1) {
@@ -265,7 +278,7 @@ table {
   background-color: white;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   p {
     font-size: 70%;
   }
@@ -297,5 +310,9 @@ table {
   #entry button {
     font-size: 40%;
     width: 46%;
+  }
+
+  #scorecard {
+    width: 50%;
   }
 }
