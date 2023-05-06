@@ -78,7 +78,7 @@ async function getLeader() {
   });
 }
 
-getLeader();
+//getLeader();
 
 function calculateRound(event, inputId, totalId) {
   event.preventDefault();
@@ -153,3 +153,4 @@ function clearscores(event) {
     document.getElementById("player4back").reset();
   }
 }
+

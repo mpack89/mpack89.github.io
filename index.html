@@ -192,9 +192,9 @@
     </div>
     <div id="scorecard">
       <table>
-        <h1>Glendenning Golf Club <button onclick="clearscores(event)">Reset Scores</button></h1>
+        <h1>Glendenning Golf Club<button onclick="clearscores(event)">Reset Scores</button></h1>
         <tr id="holes">
-          <th>Hole </th>
+          <th width="110">Hole</th>
           <th>1</th>
           <th>2</th>
           <th>3</th>
@@ -342,7 +342,7 @@
         
           <tr>
           <form id="front">
-          <td>Player 1</td>
+          <td><input type="text" id="player1name" required placeholder="Player 1"></td>
           <td><input type="text" id="hole1" required></td>
           <td><input type="text" id="hole2" required></td>
           <td><input type="text" id="hole3" required></td>
@@ -370,7 +370,7 @@
           </tr>
           <tr>
             <form id="player2front">
-            <td>Player 2</td>
+            <td><input type="text" id="player2name" required placeholder="Player 2"> </td>
             <td><input type="text" id="hole1" required></td>
             <td><input type="text" id="hole2" required></td>
             <td><input type="text" id="hole3" required></td>
@@ -399,7 +399,7 @@
        
             <tr>
               <form id="player3front">
-              <td>Player 3</td>
+              <td><input type="text" id="player3name" required placeholder="Player 3"></td>
               <td><input type="text" id="hole1" required></td>
               <td><input type="text" id="hole2" required></td>
               <td><input type="text" id="hole3" required></td>
@@ -428,7 +428,7 @@
        
               <tr>
                 <form id="player4front">
-                <td>Player 4</td>
+                <td><input type="text" id="player4name" required placeholder="Player 4"></td>
                 <td><input type="text" id="hole1" required></td>
                 <td><input type="text" id="hole2" required></td>
                 <td><input type="text" id="hole3" required></td>
