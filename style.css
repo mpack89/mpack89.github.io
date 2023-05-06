@@ -215,8 +215,14 @@ table {
   width: 50%;
 }
 #scorecard button {
-  margin-left: 460px;
-  background-color: pink;
+  
+  background-color: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 54%;
+  padding: 6px 6px 6px 6px;
+  margin: 2px 2px 4px 462px;
 }
 
 #scorecard input[type="text"] {
@@ -258,7 +264,6 @@ table {
 #scorecard tr:nth-child(10) {
   background-color: white;
 }
-
 
 @media (max-width: 500px) {
   p {

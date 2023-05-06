@@ -192,7 +192,7 @@
     </div>
     <div id="scorecard">
       <table>
-        <h1>Glendenning Golf Club<button onclick="clearscores(event)">Reset Scores</button></h1>
+        <h1>Glendenning Golf Club<button onclick="clearScores(event)">Reset Card</button></h1>
         <tr id="holes">
           <th width="110">Hole</th>
           <th>1</th>
@@ -341,8 +341,9 @@
         </tr>  
         
           <tr>
-          <form id="front">
+          <form id="front1">
           <td><input type="text" id="player1name" required placeholder="Player 1"></td>
+          </form> <form id="front">
           <td><input type="text" id="hole1" required></td>
           <td><input type="text" id="hole2" required></td>
           <td><input type="text" id="hole3" required></td>
@@ -369,8 +370,9 @@
           </form>
           </tr>
           <tr>
+            <form id="player2front1">
+            <td><input type="text" id="player2name" required placeholder="Player 2"> </td></form>
             <form id="player2front">
-            <td><input type="text" id="player2name" required placeholder="Player 2"> </td>
             <td><input type="text" id="hole1" required></td>
             <td><input type="text" id="hole2" required></td>
             <td><input type="text" id="hole3" required></td>
@@ -398,8 +400,10 @@
             </tr>
        
             <tr>
-              <form id="player3front">
+              <form id="player3front1">
               <td><input type="text" id="player3name" required placeholder="Player 3"></td>
+              </form>
+              <form id="player3front">
               <td><input type="text" id="hole1" required></td>
               <td><input type="text" id="hole2" required></td>
               <td><input type="text" id="hole3" required></td>
@@ -427,8 +431,10 @@
               </tr>
        
               <tr>
-                <form id="player4front">
+                <form id="player4front1">
                 <td><input type="text" id="player4name" required placeholder="Player 4"></td>
+                </form>
+                <form id="player4front">
                 <td><input type="text" id="hole1" required></td>
                 <td><input type="text" id="hole2" required></td>
                 <td><input type="text" id="hole3" required></td>

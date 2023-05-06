@@ -140,7 +140,7 @@ function total(event, inputId, inputId2, totalId) {
   document.getElementById(totalId).value = final;
 }
 
-function clearscores(event) {
+function clearScores(event) {
   event.preventDefault();
   if (confirm("Are you sure?")) {
     document.getElementById("front").reset();
@@ -151,6 +151,15 @@ function clearscores(event) {
     document.getElementById("player3back").reset();
     document.getElementById("player4front").reset();
     document.getElementById("player4back").reset();
+    document.getElementById("front1").reset();
+    document.getElementById("player2front1").reset();
+    document.getElementById("player3front1").reset();
+    document.getElementById("player4front1").reset();
   }
 }
+
+
+
+
+
 
