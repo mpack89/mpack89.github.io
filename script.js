@@ -76,9 +76,7 @@ async function getLeader() {
     li.innerText = item;
     list.appendChild(li);
   });
-  
 }
-
 
 getLeader();
 
@@ -157,19 +155,6 @@ function clearScores(event) {
     document.getElementById("player2front1").reset();
     document.getElementById("player3front1").reset();
     document.getElementById("player4front1").reset();
-  }
-}
-
-function show_hide0() {
-  {
-    document.getElementById("green").style.display = "block";
-    document.getElementById("handicap").style.display = "none";
-    document.getElementById("games").style.display = "none";
-    document.getElementById("facts").style.display = "none";
-    document.getElementById("leader").style.display = "none";
-    document.getElementById("scorecard").style.display = "none";
-
-    return;
   }
 }
 
@@ -256,9 +241,10 @@ function show_hide7() {
     document.getElementById("scorecard").style.display = "none";
     document.getElementById("games").style.display = "none";
     document.getElementById("facts").style.display = "none";
-    document.getElementById("leader").style.display = "block";
+    document.getElementById("leader").style.display= "block";
     document.getElementById("green").style.display = "none";
-
+  
     return;
   }
 }
+

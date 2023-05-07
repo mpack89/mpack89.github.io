@@ -14,6 +14,10 @@ body {
   text-align: center;
 }
 
+#nav ul a.active {
+  font-weight: bold;
+}
+
 #nav li {
   text-align: center;
   display: inline;
@@ -33,6 +37,7 @@ body {
 #nav li a:hover {
   font-weight: bold;
 }
+
 #green {
   position: relative;
 }
@@ -77,13 +82,14 @@ p {
 }
 
 #handicap {
-  background-color: white;
+  background-color: rgb(214, 211, 211);
   width: 40%;
   text-align: center;
   margin-top: 4px;
   padding: 10px 30px 30px 30px;
   border-radius: 10px;
   border-style: solid;
+  display: none;
 }
 
 #handicap p {
@@ -103,11 +109,11 @@ p {
 }
 
 #games {
-  display: flex;
+  display: none;
   flex-direction: column;
-  background-color: white;
+  background-color: rgb(214, 211, 211);
   border-style: solid;
-  width: 80%;
+  width: 74%;
   text-align: left;
   margin-top: 4px;
   padding: 10px 30px 30px 30px;
@@ -123,7 +129,7 @@ p {
 #games h5 {
   font-size: 120%;
   font-family: Arial, Helvetica, sans-serif;
-  float: left;
+  float: center;
 }
 
 #form {
@@ -160,29 +166,33 @@ input[type="text"] {
 
 #facts {
   margin-top: 100px;
-  background-color: white;
-  border-style: double;
+  background-color: rgb(214, 211, 211);
+  border-style: solid;
   width: 50%;
+  margin-top: 4px;
   padding: 10px 30px 30px 30px;
   border-radius: 10px;
+  display: none;
 }
 
 #facts ul {
   font-size: 120%;
-  list-style-type: circle;
+  list-style-type: disc;
   text-align: left;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 #leader {
-  background-color: white;
-  width: 76%;
-  border-radius: 10px;
-  margin: 50px;
+  background-color: rgb(214, 211, 211);
+  width: 60%;
   font-size: 96%;
   font-family: Arial, Helvetica, sans-serif;
-  border-style: groove;
+  margin-top: 4px;
+  padding: 10px 30px 30px 30px;
+  border-radius: 10px;
   font-weight: bold;
+  display: none;
+  border-style: solid;
 }
 
 #leader ul {
@@ -200,6 +210,10 @@ input[type="text"] {
   list-style-type: decimal;
 }
 
+#scorecard {
+  display: none;
+}
+
 #scorecard h1 {
   display: flex;
   align-content: center;
@@ -208,12 +222,9 @@ input[type="text"] {
   margin: auto;
   text-align: left;
   font-family: Arial, Helvetica, sans-serif;
-  border-color: black;
-  border: 2px solid;
 }
 
-th,
-td {
+th {
   border: 1px solid;
 }
 
