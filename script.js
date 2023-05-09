@@ -80,6 +80,20 @@ async function getLeader() {
 
 getLeader();
 
+
+function restore(event) {
+  event.preventDefault();
+  var restored = localStorage.getItem("scored");
+  document.getElementById("hole1").value = restored;
+}
+
+function memory(event) {
+  event.preventDefault();
+  var scored = document.getElementById("hole1");
+
+  localStorage.setItem("scored", scored.value);
+}
+
 function calculateRound(event, inputId, totalId) {
   event.preventDefault();
   const card = document.getElementById(inputId);
@@ -155,6 +169,7 @@ function clearScores(event) {
     document.getElementById("player2front1").reset();
     document.getElementById("player3front1").reset();
     document.getElementById("player4front1").reset();
+    localStorage.removeItem("scored");
   }
 }
 
@@ -241,10 +256,9 @@ function show_hide7() {
     document.getElementById("scorecard").style.display = "none";
     document.getElementById("games").style.display = "none";
     document.getElementById("facts").style.display = "none";
-    document.getElementById("leader").style.display= "block";
+    document.getElementById("leader").style.display = "block";
     document.getElementById("green").style.display = "none";
-  
+
     return;
   }
 }
-

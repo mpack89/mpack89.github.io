@@ -192,7 +192,7 @@
     </div>
     <div id="scorecard">
       <table>
-        <h1>Glendenning Golf Club<button onclick="clearScores(event)">Reset Card</button></h1>
+        <h1>Glendenning Golf Club <button onclick="restore(event)">Restore Card</button><button onclick="clearScores(event)">Reset Card</button></h1>
         <tr id="holes">
           <th width="110">Hole</th>
           <th>1</th>
@@ -345,7 +345,7 @@
           <td><input type="text" id="player1name" required placeholder="Player 1"></td>
           </form> <form id="front">
           
-          <td><input type="text" id="hole1" required></td>
+          <td><input type="text" oninput="memory(event)" id="hole1" required></td>
           <td><input type="text" id="hole2" required></td>
           <td><input type="text" id="hole3" required></td>
           <td><input type="text" id="hole4" required></td>
