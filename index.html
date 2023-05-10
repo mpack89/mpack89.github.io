@@ -12,12 +12,12 @@
 
     <div id="nav">
     <ul> 
-      <li><a href="#green" class= "active" onclick= show_hide()>About</a></li>
+      <li><a href="#green" onclick= show_hide()>About</a></li>
       <li><a href="#handicap" onclick= show_hide3()>Handicap Calculator</a></li>
       <li><a href="#scorecard" onclick= show_hide2()>Virtual Scorecard</a></li>
       <li><a href="#leader" onclick= show_hide6()>World Rankings</a></li>
       <li><a href="#facts" onclick= show_hide5()>Golf Facts</a></li>
-      <li><a href="#games" onclick= show_hide4()>Games</a></li>
+      <li><a href="#games"id="gamesnav" onclick= "show_hide4(); changeclass()">Games</a></li>
     </ul>
 
   </div>
@@ -192,7 +192,7 @@
     </div>
     <div id="scorecard">
       <table>
-        <h1>Glendenning Golf Club <button onclick="restore(event)">Restore Card</button><button onclick="clearScores(event)">Reset Card</button></h1>
+        <h1>Glendenning Golf Club<button onclick="restore(event)">Restore Card</button><button onclick="clearScores(event)">Reset Card</button></h1>
         <tr id="holes">
           <th width="110">Hole</th>
           <th>1</th>
@@ -345,7 +345,7 @@
           <td><input type="text" id="player1name" required placeholder="Player 1"></td>
           </form> <form id="front">
           
-          <td><input type="text" oninput="memory(event)" id="hole1" required></td>
+          <td><input type="text" oninput="memory(event, 'hole1', 'front1')" id="hole1" required></td>
           <td><input type="text" id="hole2" required></td>
           <td><input type="text" id="hole3" required></td>
           <td><input type="text" id="hole4" required></td>

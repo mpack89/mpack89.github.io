@@ -14,10 +14,6 @@ body {
   text-align: center;
 }
 
-#nav ul a.active {
-  font-weight: bold;
-}
-
 #nav li {
   text-align: center;
   display: inline;
@@ -37,6 +33,11 @@ body {
 #nav li a:hover {
   font-weight: bold;
 }
+
+#nav li a.active {
+  font-weight: bold;
+}
+
 
 #green {
   position: relative;
@@ -239,7 +240,7 @@ table {
   font-weight: bold;
   font-size: 54%;
   padding: 6px 6px 6px 6px;
-  margin: 2px 2px 4px 200px;
+  margin: 2px 2px 4px 180px;
 }
 
 #scorecard input[type="text"] {
