@@ -345,27 +345,27 @@
           <td><input type="text" id="player1name" required placeholder="Player 1"></td>
           </form> <form id="front">
           
-          <td><input type="text" oninput="memory(event, 'hole1', 'front')" id="hole1" required></td>
-          <td><input type="text" id="hole2" required></td>
-          <td><input type="text" id="hole3" required></td>
-          <td><input type="text" id="hole4" required></td>
-          <td><input type="text" id="hole5" required></td>
-          <td><input type="text" id="hole6" required></td>
-          <td><input type="text" id="hole7" required></td>
-          <td><input type="text" id="hole8" required></td>
-          <td><input type="text" oninput="calculateRound(event, 'front', 'front9')" id='hole9' required></td>
+          <td><input type="text" oninput="memory(event, 'hole1')" id='hole1' required></td>
+          <td><input type="text" oninput="memory(event, 'hole2')" id='hole2' required></td>
+          <td><input type="text" oninput="memory(event, 'hole3')" id="hole3" required></td>
+          <td><input type="text" oninput="memory(event, 'hole4')" id="hole4" required></td>
+          <td><input type="text" oninput="memory(event, 'hole5')" id="hole5" required></td>
+          <td><input type="text" oninput="memory(event, 'hole6')" id="hole6" required></td>
+          <td><input type="text" oninput="memory(event, 'hole7')" id="hole7" required></td>
+          <td><input type="text" oninput="memory(event, 'hole8')" id="hole8" required></td>
+          <td><input type="text" oninput="calculateRound(event, 'front', 'front9'), memory(event, 'hole9')" id='hole9' required></td>
           <td><input type="text" id="front9" value="" disabled/></td>
           </form>
           <form id="back">
-          <td><input type="text" id="hole10" required></td>
-          <td><input type="text" id="hole11" required></td>
-          <td><input type="text" id="hole12" required></td>
-          <td><input type="text" id="hole13" required></td>
-          <td><input type="text" id="hole14" required></td>
-          <td><input type="text" id="hole15" required></td>
-          <td><input type="text" id="hole16" required></td>
-          <td><input type="text" id="hole17" required></td>
-          <td><input type="text" oninput="calculateRound(event, 'back', 'back9'), total(event, 'front', 'back', 'round')" id="hole18" required></td>
+          <td><input type="text" oninput="memory(event, 'hole10')" id="hole10" required></td>
+          <td><input type="text" oninput="memory(event, 'hole11')" id="hole11" required></td>
+          <td><input type="text" oninput="memory(event, 'hole12')" id="hole12" required></td>
+          <td><input type="text" oninput="memory(event, 'hole13')" id="hole13" required></td>
+          <td><input type="text" oninput="memory(event, 'hole14')" id="hole14" required></td>
+          <td><input type="text" oninput="memory(event, 'hole15')" id="hole15" required></td>
+          <td><input type="text" oninput="memory(event, 'hole16')" id="hole16" required></td>
+          <td><input type="text" oninput="memory(event, 'hole17')" id="hole17" required></td>
+          <td><input type="text" oninput="calculateRound(event, 'back', 'back9'), total(event, 'front', 'back', 'round'), memory(event, 'hole18')" id="hole18" required></td>
           <td><input type="text" id="back9" value="" disabled/></td>
           <td><input type="text" id="round" value="" disabled/></td>
           </form>
@@ -374,27 +374,27 @@
             <form id="player2front1">
             <td><input type="text" id="player2name" required placeholder="Player 2"> </td></form>
             <form id="player2front">
-            <td><input type="text" id="hole1" required></td>
-            <td><input type="text" id="hole2" required></td>
-            <td><input type="text" id="hole3" required></td>
-            <td><input type="text" id="hole4" required></td>
-            <td><input type="text" id="hole5" required></td>
-            <td><input type="text" id="hole6" required></td>
-            <td><input type="text" id="hole7" required></td>
-            <td><input type="text" id="hole8" required></td>
-            <td><input type="text" oninput="calculateRound(event, 'player2front', 'player2front9')" id='hole9' required></td>
+            <td><input type="text" oninput="memory(event, 'hole19')" id="hole19" required></td>
+            <td><input type="text" oninput="memory(event, 'hole20')" id="hole20" required></td>
+            <td><input type="text" oninput="memory(event, 'hole21')" id="hole21" required></td>
+            <td><input type="text" oninput="memory(event, 'hole22')" id="hole22" required></td>
+            <td><input type="text" oninput="memory(event, 'hole23')" id="hole23" required></td>
+            <td><input type="text" oninput="memory(event, 'hole24')" id="hole24" required></td>
+            <td><input type="text" oninput="memory(event, 'hole25')" id="hole25" required></td>
+            <td><input type="text" oninput="memory(event, 'hole26')" id="hole26" required></td>
+            <td><input type="text" oninput="calculateRound(event, 'player2front', 'player2front9'), memory(event, 'hole27')" id='hole27' required></td>
             <td><input type="text" id="player2front9" value="" disabled/></td>
             </form>
             <form id="player2back">
-            <td><input type="text" id="hole10" required></td>
-            <td><input type="text" id="hole11" required></td>
-            <td><input type="text" id="hole12" required></td>
-            <td><input type="text" id="hole13" required></td>
-            <td><input type="text" id="hole14" required></td>
-            <td><input type="text" id="hole15" required></td>
-            <td><input type="text" id="hole16" required></td>
-            <td><input type="text" id="hole17" required></td>
-            <td><input type="text" oninput="calculateRound(event, 'player2back', 'player2back9'), total(event, 'player2front', 'player2back', 'round2')" id="hole18" required></td>
+            <td><input type="text" oninput="memory(event, 'hole28')" id="hole28" required></td>
+            <td><input type="text" oninput="memory(event, 'hole29')" id="hole29" required></td>
+            <td><input type="text" oninput="memory(event, 'hole30')" id="hole30" required></td>
+            <td><input type="text" oninput="memory(event, 'hole31')" id="hole31" required></td>
+            <td><input type="text" oninput="memory(event, 'hole32')" id="hole32" required></td>
+            <td><input type="text" oninput="memory(event, 'hole33')" id="hole33" required></td>
+            <td><input type="text" oninput="memory(event, 'hole34')" id="hole34" required></td>
+            <td><input type="text" oninput="memory(event, 'hole35')" id="hole35" required></td>
+            <td><input type="text" oninput="calculateRound(event, 'player2back', 'player2back9'), total(event, 'player2front', 'player2back', 'round2'), memory(event, 'hole36')" id="hole36" required></td>
             <td><input type="text" id="player2back9" value="" disabled/></td>
             <td><input type="text" id="round2" value="" disabled/></td>
             </form>
@@ -405,27 +405,27 @@
               <td><input type="text" id="player3name" required placeholder="Player 3"></td>
               </form>
               <form id="player3front">
-              <td><input type="text" id="hole1" required></td>
-              <td><input type="text" id="hole2" required></td>
-              <td><input type="text" id="hole3" required></td>
-              <td><input type="text" id="hole4" required></td>
-              <td><input type="text" id="hole5" required></td>
-              <td><input type="text" id="hole6" required></td>
-              <td><input type="text" id="hole7" required></td>
-              <td><input type="text" id="hole8" required></td>
-              <td><input type="text" oninput="calculateRound(event, 'player3front', 'player3front9')" id='hole9' required></td>
+              <td><input type="text" oninput="memory(event, 'hole37')" id="hole37" required></td>
+              <td><input type="text" oninput="memory(event, 'hole38')" id="hole38" required></td>
+              <td><input type="text" oninput="memory(event, 'hole39')" id="hole39" required></td>
+              <td><input type="text" oninput="memory(event, 'hole40')" id="hole40" required></td>
+              <td><input type="text" oninput="memory(event, 'hole41')" id="hole41" required></td>
+              <td><input type="text" oninput="memory(event, 'hole42')" id="hole42" required></td>
+              <td><input type="text" oninput="memory(event, 'hole43')" id="hole43" required></td>
+              <td><input type="text" oninput="memory(event, 'hole44')" id="hole44" required></td>
+              <td><input type="text" oninput="calculateRound(event, 'player3front', 'player3front9'), memory(event, 'hole45')" id='hole45' required></td>
               <td><input type="text" id="player3front9" value="" disabled/></td>
               </form>
               <form id="player3back">
-              <td><input type="text" id="hole10" required></td>
-              <td><input type="text" id="hole11" required></td>
-              <td><input type="text" id="hole12" required></td>
-              <td><input type="text" id="hole13" required></td>
-              <td><input type="text" id="hole14" required></td>
-              <td><input type="text" id="hole15" required></td>
-              <td><input type="text" id="hole16" required></td>
-              <td><input type="text" id="hole17" required></td>
-              <td><input type="text" oninput="calculateRound(event, 'player3back', 'player3back9'), total(event, 'player3front', 'player3back', 'round3')" id="hole18" required></td>
+              <td><input type="text" oninput="memory(event, 'hole46')" id="hole46" required></td>
+              <td><input type="text" oninput="memory(event, 'hole47')" id="hole47" required></td>
+              <td><input type="text" oninput="memory(event, 'hole48')" id="hole48" required></td>
+              <td><input type="text" oninput="memory(event, 'hole49')" id="hole49" required></td>
+              <td><input type="text" oninput="memory(event, 'hole50')" id="hole50" required></td>
+              <td><input type="text" oninput="memory(event, 'hole51')" id="hole51" required></td>
+              <td><input type="text" oninput="memory(event, 'hole52')" id="hole52" required></td>
+              <td><input type="text" oninput="memory(event, 'hole53')" id="hole53" required></td>
+              <td><input type="text" oninput="calculateRound(event, 'player3back', 'player3back9'), total(event, 'player3front', 'player3back', 'round3'), memory(event, 'hole54')" id="hole54" required></td>
               <td><input type="text" id="player3back9" value="" disabled/></td>
               <td><input type="text" id="round3" value="" disabled/></td>
               </form>
@@ -436,27 +436,27 @@
                 <td><input type="text" id="player4name" required placeholder="Player 4"></td>
                 </form>
                 <form id="player4front">
-                <td><input type="text" id="hole1" required></td>
-                <td><input type="text" id="hole2" required></td>
-                <td><input type="text" id="hole3" required></td>
-                <td><input type="text" id="hole4" required></td>
-                <td><input type="text" id="hole5" required></td>
-                <td><input type="text" id="hole6" required></td>
-                <td><input type="text" id="hole7" required></td>
-                <td><input type="text" id="hole8" required></td>
-                <td><input type="text" oninput="calculateRound(event, 'player4front', 'player4front9')" id='hole9' required></td>
+                <td><input type="text" oninput="memory(event, 'hole55')" id="hole55" required></td>
+                <td><input type="text" oninput="memory(event, 'hole56')" id="hole56" required></td>
+                <td><input type="text" oninput="memory(event, 'hole57')" id="hole57" required></td>
+                <td><input type="text" oninput="memory(event, 'hole58')" id="hole58" required></td>
+                <td><input type="text" oninput="memory(event, 'hole59')" id="hole59" required></td>
+                <td><input type="text" oninput="memory(event, 'hole60')" id="hole60" required></td>
+                <td><input type="text" oninput="memory(event, 'hole61')" id="hole61" required></td>
+                <td><input type="text" oninput="memory(event, 'hole62')" id="hole62" required></td>
+                <td><input type="text" oninput="calculateRound(event, 'player4front', 'player4front9'), memory(event, 'hole63')" id='hole63' required></td>
                 <td><input type="text" id="player4front9" value="" disabled/></td>
                 </form>
                 <form id="player4back">
-                <td><input type="text" id="hole10" required></td>
-                <td><input type="text" id="hole11" required></td>
-                <td><input type="text" id="hole12" required></td>
-                <td><input type="text" id="hole13" required></td>
-                <td><input type="text" id="hole14" required></td>
-                <td><input type="text" id="hole15" required></td>
-                <td><input type="text" id="hole16" required></td>
-                <td><input type="text" id="hole17" required></td>
-                <td><input type="text" oninput="calculateRound(event, 'player4back', 'player4back9'), total(event, 'player4front', 'player4back', 'round4')" id="hole18" required></td>
+                  <td><input type="text" oninput="memory(event, 'hole64')" id="hole64" required></td>
+                  <td><input type="text" oninput="memory(event, 'hole65')" id="hole65" required></td>
+                  <td><input type="text" oninput="memory(event, 'hole66')" id="hole66" required></td>
+                  <td><input type="text" oninput="memory(event, 'hole67')" id="hole67" required></td>
+                  <td><input type="text" oninput="memory(event, 'hole68')" id="hole68" required></td>
+                  <td><input type="text" oninput="memory(event, 'hole69')" id="hole69" required></td>
+                  <td><input type="text" oninput="memory(event, 'hole70')" id="hole70" required></td>
+                  <td><input type="text" oninput="memory(event, 'hole71')" id="hole71" required></td>
+                <td><input type="text" oninput="calculateRound(event, 'player4back', 'player4back9'), total(event, 'player4front', 'player4back', 'round4'), memory(event, 'hole72')" id="hole72" required></td>
                 <td><input type="text" id="player4back9" value="" disabled/></td>
                 <td><input type="text" id="round4" value="" disabled/></td>
                 </form>

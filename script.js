@@ -52,50 +52,51 @@ function calculate(event) {
   document.getElementById("txtSum").value = sum;
 }
 
-const options = {
-  method: "GET",
-  headers: {
-    "X-RapidAPI-Key": "0bdfae4b32msh944cce92bea9b3ap1ab133jsn438ada11b9cb",
-    "X-RapidAPI-Host": "golf-leaderboard-data.p.rapidapi.com",
-  },
-};
+// const options = {
+//   method: "GET",
+//   headers: {
+//     "X-RapidAPI-Key": "0bdfae4b32msh944cce92bea9b3ap1ab133jsn438ada11b9cb",
+//     "X-RapidAPI-Host": "golf-leaderboard-data.p.rapidapi.com",
+//   },
+// };
 
-const api_url = "https://golf-leaderboard-data.p.rapidapi.com/world-rankings";
-async function getLeader() {
-  const response = await fetch(api_url, options);
-  const data = await response.json();
-  const lead = data.results;
-  const rank = lead.rankings.slice(0, 99);
-  const names = rank.map((player) => {
-    return player.player_name;
-  });
+// const api_url = "https://golf-leaderboard-data.p.rapidapi.com/world-rankings";
+// async function getLeader() {
+//   const response = await fetch(api_url, options);
+//   const data = await response.json();
+//   const lead = data.results;
+//   const rank = lead.rankings.slice(0, 99);
+//   const names = rank.map((player) => {
+//     return player.player_name;
+//   });
 
-  const list = document.getElementById("myList");
-  names.forEach((item) => {
-    let li = document.createElement("li");
-    li.innerText = item;
-    list.appendChild(li);
-  });
-}
+//   const list = document.getElementById("myList");
+//   names.forEach((item) => {
+//     let li = document.createElement("li");
+//     li.innerText = item;
+//     list.appendChild(li);
+//   });
+// }
 
-getLeader();
+// getLeader();
 
 function restore(event) {
   event.preventDefault();
-
-  [...Array(18).keys()].forEach((hole) => {
+  if (confirm("Are you sure you want to restore previous scores?")) {
+  [...Array(72).keys()].forEach((hole) => {
     const holeNumber = hole + 1;
     const inputId = `hole${holeNumber}`;
     var restored = localStorage.getItem(inputId);
     document.getElementById(inputId).value = restored;
   });
-}
+}}
 
-function memory(event, inputId, formId) {
+function memory(event, inputId) {
   event.preventDefault();
-  const form = document.getElementById(formId);
-  const hole = form.querySelector(`#${inputId}`);
+  
+  const hole = document.getElementById(inputId);
   localStorage.setItem(inputId, hole.value);
+  
 }
 
 function calculateRound(event, inputId, totalId) {
@@ -160,7 +161,7 @@ function total(event, inputId, inputId2, totalId) {
 
 function clearScores(event) {
   event.preventDefault();
-  if (confirm("Are you sure?")) {
+  if (confirm("Are you sure you want to clear scores? This will also clear saved scores from previous card.")) {
     document.getElementById("front").reset();
     document.getElementById("back").reset();
     document.getElementById("player2front").reset();
@@ -173,7 +174,7 @@ function clearScores(event) {
     document.getElementById("player2front1").reset();
     document.getElementById("player3front1").reset();
     document.getElementById("player4front1").reset();
-    localStorage.removeItem("scored");
+    localStorage.clear();
   }
 }
 
