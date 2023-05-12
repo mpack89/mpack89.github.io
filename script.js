@@ -52,33 +52,33 @@ function calculate(event) {
   document.getElementById("txtSum").value = sum;
 }
 
-// const options = {
-//   method: "GET",
-//   headers: {
-//     "X-RapidAPI-Key": "0bdfae4b32msh944cce92bea9b3ap1ab133jsn438ada11b9cb",
-//     "X-RapidAPI-Host": "golf-leaderboard-data.p.rapidapi.com",
-//   },
-// };
+const options = {
+  method: "GET",
+  headers: {
+    "X-RapidAPI-Key": "0bdfae4b32msh944cce92bea9b3ap1ab133jsn438ada11b9cb",
+    "X-RapidAPI-Host": "golf-leaderboard-data.p.rapidapi.com",
+  },
+};
 
-// const api_url = "https://golf-leaderboard-data.p.rapidapi.com/world-rankings";
-// async function getLeader() {
-//   const response = await fetch(api_url, options);
-//   const data = await response.json();
-//   const lead = data.results;
-//   const rank = lead.rankings.slice(0, 99);
-//   const names = rank.map((player) => {
-//     return player.player_name;
-//   });
+const api_url = "https://golf-leaderboard-data.p.rapidapi.com/world-rankings";
+async function getLeader() {
+  const response = await fetch(api_url, options);
+  const data = await response.json();
+  const lead = data.results;
+  const rank = lead.rankings.slice(0, 99);
+  const names = rank.map((player) => {
+    return player.player_name;
+  });
 
-//   const list = document.getElementById("myList");
-//   names.forEach((item) => {
-//     let li = document.createElement("li");
-//     li.innerText = item;
-//     list.appendChild(li);
-//   });
-// }
+  const list = document.getElementById("myList");
+  names.forEach((item) => {
+    let li = document.createElement("li");
+    li.innerText = item;
+    list.appendChild(li);
+  });
+}
 
-// getLeader();
+getLeader();
 
 function restore(event) {
   event.preventDefault();
@@ -184,7 +184,7 @@ function changeclass(
   inputIdOff2,
   inputIdOff3,
   inputIdOff4,
-  inputIdOff5,
+  inputIdOff5
 ) {
   event.preventDefault();
   const change = document.getElementById(inputId);
@@ -201,94 +201,23 @@ function changeclass(
   others5.classList.remove("active");
 }
 
-
-
-function show_hide() {
+function show_hide(
+  event,
+  inputId,
+  inputIdNone,
+  inputIdNone2,
+  inputIdNone3,
+  inputIdNone4,
+  inputIdNone5
+) {
+  event.preventDefault();
   {
-    document.getElementById("green").style.display = "block";
-    document.getElementById("handicap").style.display = "none";
-    document.getElementById("games").style.display = "none";
-    document.getElementById("facts").style.display = "none";
-    document.getElementById("leader").style.display = "none";
-    document.getElementById("scorecard").style.display = "none";
-
-    return;
-  }
-}
-
-function show_hide2() {
-  {
-    document.getElementById("scorecard").style.display = "block";
-    document.getElementById("handicap").style.display = "none";
-    document.getElementById("games").style.display = "none";
-    document.getElementById("facts").style.display = "none";
-    document.getElementById("leader").style.display = "none";
-    document.getElementById("green").style.display = "none";
-
-    return;
-  }
-}
-
-function show_hide3() {
-  {
-    document.getElementById("handicap").style.display = "block";
-    document.getElementById("scorecard").style.display = "none";
-    document.getElementById("games").style.display = "none";
-    document.getElementById("facts").style.display = "none";
-    document.getElementById("leader").style.display = "none";
-    document.getElementById("green").style.display = "none";
-
-    return;
-  }
-}
-
-
-function show_hide4() {
-  {
-    document.getElementById("handicap").style.display = "none";
-    document.getElementById("scorecard").style.display = "none";
-    document.getElementById("games").style.display = "block";
-    document.getElementById("facts").style.display = "none";
-    document.getElementById("leader").style.display = "none";
-    document.getElementById("green").style.display = "none";
-
-    return;
-  }
-}
-function show_hide5() {
-  {
-    document.getElementById("handicap").style.display = "none";
-    document.getElementById("scorecard").style.display = "none";
-    document.getElementById("games").style.display = "none";
-    document.getElementById("facts").style.display = "block";
-    document.getElementById("leader").style.display = "none";
-    document.getElementById("green").style.display = "none";
-
-    return;
-  }
-}
-
-function show_hide6() {
-  {
-    document.getElementById("handicap").style.display = "none";
-    document.getElementById("scorecard").style.display = "none";
-    document.getElementById("games").style.display = "none";
-    document.getElementById("facts").style.display = "none";
-    document.getElementById("leader").style.display = "block";
-    document.getElementById("green").style.display = "none";
-
-    return;
-  }
-}
-
-function show_hide7() {
-  {
-    document.getElementById("handicap").style.display = "none";
-    document.getElementById("scorecard").style.display = "none";
-    document.getElementById("games").style.display = "none";
-    document.getElementById("facts").style.display = "none";
-    document.getElementById("leader").style.display = "block";
-    document.getElementById("green").style.display = "none";
+    document.getElementById(inputId).style.display = "block";
+    document.getElementById(inputIdNone).style.display = "none";
+    document.getElementById(inputIdNone2).style.display = "none";
+    document.getElementById(inputIdNone3).style.display = "none";
+    document.getElementById(inputIdNone4).style.display = "none";
+    document.getElementById(inputIdNone5).style.display = "none";
 
     return;
   }
