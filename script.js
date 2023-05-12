@@ -185,7 +185,6 @@ function changeclass(
   inputIdOff3,
   inputIdOff4,
   inputIdOff5,
-  inputIdOff6
 ) {
   event.preventDefault();
   const change = document.getElementById(inputId);
@@ -200,8 +199,6 @@ function changeclass(
   others4.classList.remove("active");
   const others5 = document.getElementById(inputIdOff5);
   others5.classList.remove("active");
-  const others6 = document.getElementById(inputIdOff6);
-  others6.classList.remove("active");
 }
 
 
