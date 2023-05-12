@@ -80,21 +80,16 @@ function calculate(event) {
 
 // getLeader();
 
-
 function restore(event) {
   event.preventDefault();
-  
+
   [...Array(18).keys()].forEach((hole) => {
     const holeNumber = hole + 1;
-    const inputId = `hole${holeNumber}`
+    const inputId = `hole${holeNumber}`;
     var restored = localStorage.getItem(inputId);
     document.getElementById(inputId).value = restored;
-    })
-
-
+  });
 }
-
-
 
 function memory(event, inputId, formId) {
   event.preventDefault();
@@ -182,6 +177,35 @@ function clearScores(event) {
   }
 }
 
+function changeclass(
+  event,
+  inputId,
+  inputIdOff,
+  inputIdOff2,
+  inputIdOff3,
+  inputIdOff4,
+  inputIdOff5,
+  inputIdOff6
+) {
+  event.preventDefault();
+  const change = document.getElementById(inputId);
+  change.classList.add("active");
+  const others = document.getElementById(inputIdOff);
+  others.classList.remove("active");
+  const others2 = document.getElementById(inputIdOff2);
+  others2.classList.remove("active");
+  const others3 = document.getElementById(inputIdOff3);
+  others3.classList.remove("active");
+  const others4 = document.getElementById(inputIdOff4);
+  others4.classList.remove("active");
+  const others5 = document.getElementById(inputIdOff5);
+  others5.classList.remove("active");
+  const others6 = document.getElementById(inputIdOff6);
+  others6.classList.remove("active");
+}
+
+
+
 function show_hide() {
   {
     document.getElementById("green").style.display = "block";
@@ -220,10 +244,7 @@ function show_hide3() {
     return;
   }
 }
-function changeclass() {
-  const change = document.getElementById("gamesnav");
-  change.classList.add('active');
-}
+
 
 function show_hide4() {
   {
@@ -233,7 +254,7 @@ function show_hide4() {
     document.getElementById("facts").style.display = "none";
     document.getElementById("leader").style.display = "none";
     document.getElementById("green").style.display = "none";
-    
+
     return;
   }
 }
