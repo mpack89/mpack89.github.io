@@ -83,7 +83,7 @@ function calculate(event) {
 function restore(event) {
   event.preventDefault();
   if (confirm("Are you sure you want to restore previous scores?")) {
-  [...Array(72).keys()].forEach((hole) => {
+  [...Array(76).keys()].forEach((hole) => {
     const holeNumber = hole + 1;
     const inputId = `hole${holeNumber}`;
     var restored = localStorage.getItem(inputId);
