@@ -65,16 +65,16 @@ function calculate(event) {
 //   const response = await fetch(api_url, options);
 //   const data = await response.json();
 //   const lead = data.results;
-//   const rank = lead.rankings.slice(0, 99);
+//   const rank = lead.rankings.slice(0, 19);
 //   const names = rank.map((player) => {
 //     return player.player_name;
 //   });
 
-//   const list = document.getElementById("myList");
+//   const list = document.getElementById("myTable");
 //   names.forEach((item) => {
-//     let li = document.createElement("li");
-//     li.innerText = item;
-//     list.appendChild(li);
+//     let tr = document.createElement("tr");
+//     tr.innerText = item;
+//     list.appendChild(tr);
 //   });
 // }
 
