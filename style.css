@@ -39,7 +39,6 @@ body {
   font-size: 104%;
 }
 
-
 #green {
   position: relative;
 }
@@ -221,13 +220,13 @@ input[type="text"] {
 }
 
 #leader table {
-grid-row: auto;
-background-color: white;
-color: black;
-text-align: left;
-counter-increment: rowNumber;
+  grid-row: auto;
+  background-color: white;
+  color: black;
+  text-align: left;
+  counter-increment: rowNumber;
 }
- 
+
 #flexwrapper {
   display: flex;
   justify-content: space-around;
@@ -270,6 +269,38 @@ table {
   font-size: 54%;
   padding: 6px 6px 6px 6px;
   margin: 2px 2px 4px 180px;
+}
+
+#handicap {
+  animation: transitionIn 3s;
+}
+#facts {
+  animation: transitionIn 3s;
+}
+#leader {
+  animation: transitionIn 3s;
+}
+#games {
+  animation: transitionIn 3s;
+}
+#scorecard {
+  animation: transitionIn 3s;
+}
+
+#green {
+  animation: transitionIn 3s;
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: translate(2);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
 
 #scorecard input[type="text"] {
@@ -354,41 +385,27 @@ table {
   }
 
   #nav ul {
-
     width: 60%;
   }
-
-
-
 }
 
-
-
-
-
-
 @media (max-width: 800px) {
-
   .table-responsive {
     width: 100%;
     margin-bottom: 15px;
     overflow-y: hidden;
     -ms-overflow-style: -ms-autohiding-scrollbar;
     border: 1px solid;
-    
+
     .table-responsive > .table {
       margin-bottom: 0;
     }
-    
-    
+
     .table-responsive > thead > tr > th,
     .table-responsive > tbody > tr > th,
     .table-responsive > tfoot > tr > th,
     .table-responsive > thead > tr > th,
     .table-responsive > tbody > tr > th,
-    .table-responsive > tfoot > tr > th, {
-      white-space: ;
-    }
-
- }
+    .table-responsive > tfoot > tr > th;
+  }
 }

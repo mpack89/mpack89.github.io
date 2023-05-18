@@ -1,5 +1,5 @@
 function remove(event) {
-  event.preventDefault();
+  event.preventDefault()
   var ball = document.getElementById("golf");
   Array.from(ball.children).forEach((input, index) => {
     if (index !== 0) {
@@ -73,7 +73,8 @@ function calculate(event) {
 //   const list = document.getElementById("myTable");
 //   names.forEach((item) => {
 //     let tr = document.createElement("tr");
-//     tr.innerText = item;
+//     let td
+//tr.innerText = item;
 //     list.appendChild(tr);
 //   });
 // }
