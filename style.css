@@ -123,31 +123,13 @@ p {
   margin-top: 4px;
   padding: 10px 30px 30px 30px;
   border-radius: 10px;
+  
 }
 
 #games p {
   background-color: white;
   border-radius: 4px;
   padding: 6px 6px 6px 6px;
-  border-style: solid;
-}
-
-#games h4 {
-  font-size: 170%;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  border-radius: 4px;
-  padding: 6px 6px 6px 6px;
-}
-
-#games h5 {
-  font-size: 120%;
-  font-family: Arial, Helvetica, sans-serif;
-  float: center;
-  background-color: white;
-  border-radius: 4px;
-  padding: 6px 6px 6px 6px;
-  width: 16%;
   border-style: solid;
 }
 
