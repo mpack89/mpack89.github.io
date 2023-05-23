@@ -261,7 +261,7 @@ function show_hide(
     quizContainer.innerHTML = output.join('');
   }
 
-  buildQuiz();
+ 
   function showResults(){
 
 
@@ -418,6 +418,7 @@ function show_hide(
     }
   ];
 
+  buildQuiz();
 
 
   const previousButton = document.getElementById("previous");
@@ -425,9 +426,9 @@ function show_hide(
   const slides = document.querySelectorAll(".slide");
   let currentSlide = 0;
 
-  showSlide(currentSlide)
+  showSlide(currentSlide);
 
   submitButton.addEventListener('click', showResults);
   previousButton.addEventListener("click", showPreviousSlide);
   nextButton.addEventListener("click", showNextSlide);
-});
+})();
