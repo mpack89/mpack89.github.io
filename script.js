@@ -334,7 +334,7 @@ function show_hide(
       correctAnswer: "c"
     },
     {
-      question: "How many major championships have Tiger Woods won (to January 2022)?",
+      question: "How many major championships has Tiger Woods won (as of January 2022)?",
       answers: {
         a: "15",
         b: "18",
@@ -395,7 +395,7 @@ function show_hide(
       correctAnswer: "b"
     },
     {
-      question: "How many point are needed to win The Ryder Cup?",
+      question: "How many points are needed to win The Ryder Cup?",
       answers: {
         a: "15",
         b: "10.5",
@@ -413,9 +413,8 @@ function show_hide(
         d: "Valero Texas Open"
       },
       correctAnswer: "a"
-    
-  
     }
+   
   ];
 
   buildQuiz();

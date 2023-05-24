@@ -164,11 +164,11 @@ input[type="text"] {
 
 
 #facts {
-  margin-top: 100px;
+  
   background-color: rgb(214, 211, 211);
   border-style: solid;
   width: 50%;
-  margin-top: 4px;
+  margin-top: 140px;
   padding: 10px 30px 30px 30px;
   border-radius: 10px;
   display: none;
@@ -390,15 +390,17 @@ table {
   background-color: #f8f6f0;
 }
 #facts h1{
-  font-weight: 300;
+  font-weight: 200;
   margin: 0px;
   padding: 10px;
   font-size: 20px;
   background-color: #444;
   color: #fff;
+  text-align: center;
+ 
 }
 #facts .question{
-  font-size: 30px;
+  font-size: 20px;
   margin-bottom: 10px;
 
 }
@@ -413,8 +415,8 @@ table {
 }
 #facts button{
   font-family: 'Work Sans', sans-serif;
-	font-size: 22px;
-	background-color: #279;
+	font-size: 16px;
+	background-color: green;
 	color: #fff;
 	border: 0px;
 	border-radius: 3px;
@@ -423,7 +425,7 @@ table {
 	margin-bottom: 20px;
 }
 #facts button:hover{
-	background-color: #38a;
+	background-color: rgb(76, 221, 76);
 }
 
 
