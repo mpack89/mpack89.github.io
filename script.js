@@ -281,7 +281,7 @@ function show_hide(
       
         numCorrect++;
 
-        answerContainers[questionNumber].style.color = 'lightgreen';
+        answerContainers[questionNumber].style.color = 'green';
       }
     
       else{
