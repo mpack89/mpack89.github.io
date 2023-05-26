@@ -52,34 +52,47 @@ function calculate(event) {
   document.getElementById("txtSum").value = sum;
 }
 
-// const options = {
-//   method: "GET",
-//   headers: {
-//     "X-RapidAPI-Key": "0bdfae4b32msh944cce92bea9b3ap1ab133jsn438ada11b9cb",
-//     "X-RapidAPI-Host": "golf-leaderboard-data.p.rapidapi.com",
-//   },
-// };
+const options = {
+  method: "GET",
+  headers: {
+    "X-RapidAPI-Key": "0bdfae4b32msh944cce92bea9b3ap1ab133jsn438ada11b9cb",
+    "X-RapidAPI-Host": "golf-leaderboard-data.p.rapidapi.com",
+  },
+};
 
-// const api_url = "https://golf-leaderboard-data.p.rapidapi.com/world-rankings";
-// async function getLeader() {
-//   const response = await fetch(api_url, options);
-//   const data = await response.json();
-//   const lead = data.results;
-//   const rank = lead.rankings.slice(0, 19);
-//   const names = rank.map((player) => {
-//     return player.player_name;
-//   });
+const api_url = "https://golf-leaderboard-data.p.rapidapi.com/world-rankings";
+async function getLeader() {
+  const response = await fetch(api_url, options);
+  const data = await response.json();
+  const lead = data.results;
+  const rank = lead.rankings.slice(0, 19);
+  const formattedPlayers = rank.map((player) => {
+    return [player.position, player.player_name];
+  })
 
-//   const list = document.getElementById("myTable");
-//   names.forEach((item) => {
-//     let tr = document.createElement("tr");
-//     let td
-//tr.innerText = item;
-//     list.appendChild(tr);
-//   });
-// }
+  const tableHeaders=['Rank', 'Player']
+  const list = document.getElementById("myTable");
+  let headerRow = document.createElement("tr");
+  list.appendChild(headerRow);
+  tableHeaders.forEach((header) => {
+    let th = document.createElement("th")
+    th.innerText = header;
+    headerRow.appendChild(th);
+  })
+  formattedPlayers.forEach((player) => {
+    let tr = document.createElement("tr");
+    list.appendChild(tr);
+    player.forEach((property) => {
+      let td = document.createElement("td")
+    td.innerText = property;
+    tr.appendChild(td);
+    }) 
+    
+   
+  });
+}
 
-// getLeader();
+getLeader();
 
 function restore(event) {
   event.preventDefault();
