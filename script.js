@@ -1,5 +1,5 @@
 function remove(event) {
-  event.preventDefault()
+  event.preventDefault();
   var ball = document.getElementById("golf");
   Array.from(ball.children).forEach((input, index) => {
     if (index !== 0) {
@@ -52,65 +52,68 @@ function calculate(event) {
   document.getElementById("txtSum").value = sum;
 }
 
-// const options = {
-//   method: "GET",
-//   headers: {
-//     "X-RapidAPI-Key": "0bdfae4b32msh944cce92bea9b3ap1ab133jsn438ada11b9cb",
-//     "X-RapidAPI-Host": "golf-leaderboard-data.p.rapidapi.com",
-//   },
-// };
+const options = {
+  method: "GET",
+  headers: {
+    "X-RapidAPI-Key": "0bdfae4b32msh944cce92bea9b3ap1ab133jsn438ada11b9cb",
+    "X-RapidAPI-Host": "golf-leaderboard-data.p.rapidapi.com",
+  },
+};
 
-// const api_url = "https://golf-leaderboard-data.p.rapidapi.com/world-rankings";
-// async function getLeader() {
-//   const response = await fetch(api_url, options);
-//   const data = await response.json();
-//   const lead = data.results;
-//   const rank = lead.rankings.slice(0, 19);
-//   const formattedPlayers = rank.map((player) => {
-//     return [player.position, player.player_name, player.num_events];
-//   })
+const api_url = "https://golf-leaderboard-data.p.rapidapi.com/world-rankings";
+async function getLeader() {
+  const response = await fetch(api_url, options);
+  const data = await response.json();
+  const lead = data.results;
+  const rank = lead.rankings.slice(0, 29);
+  const formattedPlayers = rank.map((player) => {
+    return [
+      player.position,
+      player.player_name,
+      player.num_events,
+      player.total_points,
+    ];
+  });
 
-//   const tableHeaders=['Rank', 'Player', 'Events Played']
-//   const list = document.getElementById("myTable");
-//   let headerRow = document.createElement("tr");
-//   list.appendChild(headerRow);
-//   tableHeaders.forEach((header) => {
-//     let th = document.createElement("th")
-//     th.innerText = header;
-//     headerRow.appendChild(th);
-//   })
-//   formattedPlayers.forEach((player) => {
-//     let tr = document.createElement("tr");
-//     list.appendChild(tr);
-//     player.forEach((property) => {
-//       let td = document.createElement("td")
-//     td.innerText = property;
-//     tr.appendChild(td);
-//     }) 
-    
-   
-//   });
-// }
+  const tableHeaders = ["Rank", "Player", "Events Played", "Total Points"];
+  const list = document.getElementById("myTable");
+  let headerRow = document.createElement("tr");
+  list.appendChild(headerRow);
+  tableHeaders.forEach((header) => {
+    let th = document.createElement("th");
+    th.innerText = header;
+    headerRow.appendChild(th);
+  });
+  formattedPlayers.forEach((player) => {
+    let tr = document.createElement("tr");
+    list.appendChild(tr);
+    player.forEach((property) => {
+      let td = document.createElement("td");
+      td.innerText = property;
+      tr.appendChild(td);
+    });
+  });
+}
 
-//getLeader();
+getLeader();
 
 function restore(event) {
   event.preventDefault();
   if (confirm("Are you sure you want to restore previous scores?")) {
-  [...Array(76).keys()].forEach((hole) => {
-    const holeNumber = hole + 1;
-    const inputId = `hole${holeNumber}`;
-    var restored = localStorage.getItem(inputId);
-    document.getElementById(inputId).value = restored;
-  });
-}}
+    [...Array(76).keys()].forEach((hole) => {
+      const holeNumber = hole + 1;
+      const inputId = `hole${holeNumber}`;
+      var restored = localStorage.getItem(inputId);
+      document.getElementById(inputId).value = restored;
+    });
+  }
+}
 
 function memory(event, inputId) {
   event.preventDefault();
-  
+
   const hole = document.getElementById(inputId);
   localStorage.setItem(inputId, hole.value);
-  
 }
 
 function calculateRound(event, inputId, totalId) {
@@ -175,7 +178,11 @@ function total(event, inputId, inputId2, totalId) {
 
 function clearScores(event) {
   event.preventDefault();
-  if (confirm("Are you sure you want to clear scores? This will also clear saved scores from previous card.")) {
+  if (
+    confirm(
+      "Are you sure you want to clear scores? This will also clear saved scores from previous card."
+    )
+  ) {
     document.getElementById("front").reset();
     document.getElementById("back").reset();
     document.getElementById("player2front").reset();
@@ -238,67 +245,50 @@ function show_hide(
   }
 }
 
-
-
-(function(){
-
-  function buildQuiz(){
-    
+(function () {
+  function buildQuiz() {
     const output = [];
 
-    myQuestions.forEach(
-      (currentQuestion, questionNumber) => {
+    myQuestions.forEach((currentQuestion, questionNumber) => {
+      const answers = [];
 
-        const answers = [];
-
-        for(letter in currentQuestion.answers){
-
-          answers.push(
-            `<label>
+      for (letter in currentQuestion.answers) {
+        answers.push(
+          `<label>
               <input type="radio" name="question${questionNumber}" value="${letter}">
               ${letter} :
               ${currentQuestion.answers[letter]}
             </label>`
-          );
-        }
+        );
+      }
 
-        output.push(
-          `<div class="slide">
+      output.push(
+        `<div class="slide">
             <div class="question"> ${currentQuestion.question} </div>
             <div class="answers"> ${answers.join("")} </div>
           </div>`
-        );
-      }
-    );
+      );
+    });
 
-    quizContainer.innerHTML = output.join('');
+    quizContainer.innerHTML = output.join("");
   }
 
- 
-  function showResults(){
-
-
-    const answerContainers = quizContainer.querySelectorAll('.answers');
-
+  function showResults() {
+    const answerContainers = quizContainer.querySelectorAll(".answers");
 
     let numCorrect = 0;
 
-    myQuestions.forEach( (currentQuestion, questionNumber) => {
-
-    
+    myQuestions.forEach((currentQuestion, questionNumber) => {
       const answerContainer = answerContainers[questionNumber];
       const selector = `input[name=question${questionNumber}]:checked`;
       const userAnswer = (answerContainer.querySelector(selector) || {}).value;
 
-      if(userAnswer === currentQuestion.correctAnswer){
-      
+      if (userAnswer === currentQuestion.correctAnswer) {
         numCorrect++;
 
-        answerContainers[questionNumber].style.color = 'green';
-      }
-    
-      else{
-        answerContainers[questionNumber].style.color = 'red';
+        answerContainers[questionNumber].style.color = "green";
+      } else {
+        answerContainers[questionNumber].style.color = "red";
       }
     });
 
@@ -306,22 +296,20 @@ function show_hide(
   }
 
   function showSlide(n) {
-    slides[currentSlide].classList.remove('active-slide');
-    slides[n].classList.add('active-slide');
+    slides[currentSlide].classList.remove("active-slide");
+    slides[n].classList.add("active-slide");
     currentSlide = n;
-    if(currentSlide === 0){
-      previousButton.style.display = 'none';
+    if (currentSlide === 0) {
+      previousButton.style.display = "none";
+    } else {
+      previousButton.style.display = "inline-block";
     }
-    else{
-      previousButton.style.display = 'inline-block';
-    }
-    if(currentSlide === slides.length-1){
-      nextButton.style.display = 'none';
-      submitButton.style.display = 'inline-block';
-    }
-    else{
-      nextButton.style.display = 'inline-block';
-      submitButton.style.display = 'none';
+    if (currentSlide === slides.length - 1) {
+      nextButton.style.display = "none";
+      submitButton.style.display = "inline-block";
+    } else {
+      nextButton.style.display = "inline-block";
+      submitButton.style.display = "none";
     }
   }
 
@@ -332,29 +320,31 @@ function show_hide(
   function showPreviousSlide() {
     showSlide(currentSlide - 1);
   }
-  const quizContainer = document.getElementById('quiz');
-  const resultsContainer = document.getElementById('results');
-  const submitButton = document.getElementById('submit');
+  const quizContainer = document.getElementById("quiz");
+  const resultsContainer = document.getElementById("results");
+  const submitButton = document.getElementById("submit");
   const myQuestions = [
     {
-      question: "Back in 2014, which golfer became the third player after Jack Nicklaus and Tiger Woods to win three majors by the age of 25 and the first European to win three different major titles.",
+      question:
+        "Back in 2014, which golfer became the third player after Jack Nicklaus and Tiger Woods to win three majors by the age of 25 and the first European to win three different major titles.",
       answers: {
         a: "Sergio Garcia",
         b: "John Rahm",
         c: "Rory McIlroy",
-        d: "Ernie Els"
+        d: "Ernie Els",
       },
-      correctAnswer: "c"
+      correctAnswer: "c",
     },
     {
-      question: "How many major championships has Tiger Woods won (as of January 2022)?",
+      question:
+        "How many major championships has Tiger Woods won (as of January 2022)?",
       answers: {
         a: "15",
         b: "18",
         c: "20",
-        d: "12"
+        d: "12",
       },
-      correctAnswer: "a"
+      correctAnswer: "a",
     },
     {
       question: "Who is the only tour rookie to win a PGA major?",
@@ -362,9 +352,9 @@ function show_hide(
         a: "Tiger Woods",
         b: "Rory McIlroy",
         c: "Jordan Spieth",
-        d: "John Daly"
+        d: "John Daly",
       },
-      correctAnswer: "d"
+      correctAnswer: "d",
     },
     {
       question: "What is the appropriate loft range for a sand wedge?",
@@ -372,20 +362,21 @@ function show_hide(
         a: "50-54 Degrees",
         b: "54-58 Degrees",
         c: "58-62 Degrees",
-        d: "62-66 Degrees"
+        d: "62-66 Degrees",
       },
-      correctAnswer: "b"
+      correctAnswer: "b",
     },
-    
+
     {
-      question: "An avid golfer, which popular actor has a contract clause to play golf twice a week whenever he films movies?",
+      question:
+        "An avid golfer, which popular actor has a contract clause to play golf twice a week whenever he films movies?",
       answers: {
         a: "Samuel L. Jackson",
         b: "Bill Murray",
         c: "Mark Wahlberg",
-        d: "Adam Sandler"
+        d: "Adam Sandler",
       },
-      correctAnswer: "a"
+      correctAnswer: "a",
     },
     {
       question: "How many players make the cut at The British Open?",
@@ -393,9 +384,9 @@ function show_hide(
         a: "60",
         b: "70",
         c: "80",
-        d: "90"
+        d: "90",
       },
-      correctAnswer: "b"
+      correctAnswer: "b",
     },
     {
       question: "How many clubs can a player carry in their bag?",
@@ -403,9 +394,9 @@ function show_hide(
         a: "12",
         b: "10",
         c: "15",
-        d: "14"
+        d: "14",
       },
-      correctAnswer: "b"
+      correctAnswer: "b",
     },
     {
       question: "How many points are needed to win The Ryder Cup?",
@@ -413,9 +404,9 @@ function show_hide(
         a: "15",
         b: "10.5",
         c: "12",
-        d: "14.5"
+        d: "14.5",
       },
-      correctAnswer: "d"
+      correctAnswer: "d",
     },
     {
       question: "What event was Rickie Fowler's first career win?",
@@ -423,15 +414,13 @@ function show_hide(
         a: "Wells Fargo Championship",
         b: "The Honda Classic",
         c: "WM Phoenix Open",
-        d: "Valero Texas Open"
+        d: "Valero Texas Open",
       },
-      correctAnswer: "a"
-    }
-   
+      correctAnswer: "a",
+    },
   ];
 
   buildQuiz();
-
 
   const previousButton = document.getElementById("previous");
   const nextButton = document.getElementById("next");
@@ -440,7 +429,7 @@ function show_hide(
 
   showSlide(currentSlide);
 
-  submitButton.addEventListener('click', showResults);
+  submitButton.addEventListener("click", showResults);
   previousButton.addEventListener("click", showPreviousSlide);
   nextButton.addEventListener("click", showNextSlide);
 })();

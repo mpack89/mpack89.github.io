@@ -123,7 +123,6 @@ p {
   margin-top: 4px;
   padding: 10px 30px 30px 30px;
   border-radius: 10px;
-  
 }
 
 #games p {
@@ -159,19 +158,45 @@ input[type="text"] {
 #handi {
   display: block;
 }
- #myTable {
+#myTable {
   border: 2px;
-  border-collapse: collapse;
-  width: 100%;
+  border-style: solid;
+  width: 70%;
   border-color: black;
-  
+  margin: auto;
+}
 
- }
+#myTable tr:nth-child(1) {
+  font-size: 120%;
+}
+#myTable tr:nth-child(even) {
+  background-color: white;
+}
+#myTable tr:nth-child(odd) {
+  background-color: rgb(202, 198, 198);
+}
 
+#myTable td:nth-child(1) {
+  color: black;
+  width: 20%;
+}
 
+#myTable td:nth-child(2) {
+  color: black;
+  width: 20%;
+}
+
+#myTable td:nth-child(3) {
+  color: blue;
+  width: 20%;
+}
+
+#myTable td:nth-child(4) {
+  color: red;
+  width: 20%;
+}
 
 #facts {
-  
   background-color: rgb(214, 211, 211);
   border-style: solid;
   width: 50%;
@@ -182,7 +207,7 @@ input[type="text"] {
 }
 
 #leader {
-  background-color: rgb(214, 211, 211);
+  background-color: black;
   width: 50%;
   font-size: 70%;
   font-family: Arial, Helvetica, sans-serif;
@@ -389,14 +414,14 @@ table {
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600);
 
 #facts body {
-	font-size: 20px;
-	font-family: Arial, Helvetica, sans-serif;
-	color: #333;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
   font-weight: 300;
   text-align: center;
   background-color: #f8f6f0;
 }
-#facts h1{
+#facts h1 {
   font-weight: 200;
   margin: 0px;
   padding: 10px;
@@ -405,43 +430,37 @@ table {
   color: #fff;
   text-align: center;
   border-radius: 20px;
- 
 }
-#facts .question{
+#facts .question {
   font-size: 20px;
   margin-bottom: 10px;
-
 }
 #facts .answers {
   margin-bottom: 20px;
   text-align: left;
   display: inline-block;
 }
-#facts .answers label{
+#facts .answers label {
   display: block;
   margin-bottom: 10px;
 }
-#facts button{
+#facts button {
   font-family: Arial, Helvetica, sans-serif;
-	font-size: 16px;
-	background-color: green;
-	color: #fff;
-	border: 0px;
-	border-radius: 20px;
-	padding: 10px;
-	cursor: pointer;
-	margin-bottom: 20px;
+  font-size: 16px;
+  background-color: green;
+  color: #fff;
+  border: 0px;
+  border-radius: 20px;
+  padding: 10px;
+  cursor: pointer;
+  margin-bottom: 20px;
   font-weight: 200;
 }
-#facts button:hover{
-	background-color: rgb(76, 221, 76);
+#facts button:hover {
+  background-color: rgb(76, 221, 76);
 }
 
-
-
-
-
-#facts .slide{
+#facts .slide {
   position: absolute;
   left: 0px;
   top: 0px;
@@ -450,11 +469,11 @@ table {
   opacity: 0;
   transition: opacity 0.5s;
 }
-#facts .active-slide{
+#facts .active-slide {
   opacity: 1;
   z-index: 2;
 }
-#facts .quiz-container{
+#facts .quiz-container {
   position: relative;
   height: 200px;
   margin-top: 40px;
