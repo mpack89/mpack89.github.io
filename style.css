@@ -159,7 +159,14 @@ input[type="text"] {
 #handi {
   display: block;
 }
+ #myTable {
+  border: 2px;
+  border-collapse: collapse;
+  width: 100%;
+  border-color: black;
+  
 
+ }
 
 
 
