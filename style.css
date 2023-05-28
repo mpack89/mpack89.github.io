@@ -159,11 +159,10 @@ input[type="text"] {
   display: block;
 }
 #myTable {
-  border: 2px;
-  border-style: solid;
+  border-style: none;
   width: 70%;
-  border-color: black;
   margin: auto;
+  padding: 0;
 }
 
 #myTable tr:nth-child(1) {
@@ -207,25 +206,32 @@ input[type="text"] {
 }
 
 #leader {
-  background-color: black;
+  background-color: white;
   width: 50%;
   font-size: 70%;
   font-family: Arial, Helvetica, sans-serif;
-  margin-top: 4px;
-  padding: 10px 30px 30px 30px;
+  padding: 20px 30px 30px 30px;
   border-radius: 10px;
   font-weight: bold;
   display: none;
   border-style: solid;
-  color: white;
+  color: black;
+  margin-top: 30px;
+}
+
+#leader h1 {
+
+font-family: Georgia, Times, 'Times New Roman', serif;
+
 }
 
 #leader table {
-  grid-row: auto;
+
   background-color: white;
   color: black;
   text-align: left;
-  counter-increment: rowNumber;
+  
+  border-bottom: 0;
 }
 
 #flexwrapper {
