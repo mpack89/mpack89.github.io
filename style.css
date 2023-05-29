@@ -106,6 +106,7 @@ p {
   margin-top: 0px;
   font-size: 140%;
   font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
 }
 
 #calculator,
@@ -431,11 +432,10 @@ table {
   font-weight: 200;
   margin: 0px;
   padding: 10px;
-  font-size: 20px;
-  background-color: #444;
-  color: #fff;
+  font-size: 30px;
+  color: black;
   text-align: center;
-  border-radius: 20px;
+  
 }
 #facts .question {
   font-size: 20px;
@@ -445,6 +445,7 @@ table {
   margin-bottom: 20px;
   text-align: left;
   display: inline-block;
+  color: blue;
 }
 #facts .answers label {
   display: block;
