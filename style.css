@@ -92,6 +92,10 @@ p {
   border-style: solid;
   display: none;
 }
+#handicap h2 img {
+  display: inline-block;
+  margin: 14px 14px;
+}
 
 #handicap p {
   color: black;
@@ -408,13 +412,12 @@ table {
     .table-responsive > .table {
       margin-bottom: 0;
     }
-
+    
     .table-responsive > thead > tr > th,
     .table-responsive > tbody > tr > th,
     .table-responsive > tfoot > tr > th,
     .table-responsive > thead > tr > th,
-    .table-responsive > tbody > tr > th,
-    .table-responsive > tfoot > tr > th;
+    .table-responsive > tbody > tr > th
   }
 }
 
@@ -431,38 +434,44 @@ table {
   background-color: #f8f6f0;
 }
 #facts h1 {
-  font-weight: 200;
+  font-weight: 600;
   margin: 0px;
-  padding: 0px;
+  padding: 10px;
   font-size: 30px;
   color: black;
   text-align: center;
   margin-bottom: 4px;
+  font-family: sans-serif;
   
+}
+#facts h1 img {
+  display: inline-block;
+  margin: 20px 20px;
 }
 #facts .question {
   font-size: 20px;
-  border: 0px;
   border-radius: 10px;
-  padding: 0px;
+  padding: 8px;
   margin-bottom: 8px;
   font-weight: 200;
+  font-family: sans-serif;
 }
 #facts .answers {
   margin-bottom: 30px;
   text-align: center;
   display: inline-block;
   color: black;
-  background-color: white;
+  background-color: rgb(235, 231, 231);
   border: black;
   border-style: solid;
-  width: 20%;
-  padding: 2px;
+  width: 30%;
+  padding: 14px;
   font-family: sans-serif;
   font-weight: 600;
   font-style: italic;
   border-radius: 6px;
-  margin-top: 10px;
+  margin-top: 50px;
+
 }
 #facts .answers label {
   display: block;
@@ -470,17 +479,18 @@ table {
 }
 #facts button {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
-  font-size: 16px;
+  font-size: 14px;
   background-color:rgb(122, 122, 122);
   color: #fff;
   border: 0px;
   border-radius: 10px;
   padding: 10px;
   cursor: pointer;
-  font-weight: 200;
+  font-weight: 100;
 }
 #facts button:hover {
-  background-color: rgb(73, 72, 72);
+  background-color: rgb(37, 37, 37);
+  cursor: pointer;
 }
 
 #facts .slide {
@@ -498,6 +508,6 @@ table {
 }
 #facts .quiz-container {
   position: relative;
-  height: 200px;
+  height: 300px;
   margin-top: 40px;
 }
