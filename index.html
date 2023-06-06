@@ -12,12 +12,11 @@
 
     <div id="nav">
     <ul> 
-      <li><a href="#green" class="active" id="greennav" onclick= "show_hide(event, 'green', 'handicap', 'games', 'facts', 'leader', 'scorecard'),changeclass(event, 'greennav', 'handicapnav', 'gamesnav', 'factsnav', 'leadernav', 'scorecardnav')" >About</a></li>
-      <li><a href="#handicap" id="handicapnav" onclick= "show_hide(event, 'handicap', 'games', 'facts', 'leader', 'scorecard', 'green'),changeclass(event, 'handicapnav', 'gamesnav', 'factsnav', 'leadernav', 'scorecardnav', 'greennav' )" >Handicap Calculator</a></li>
-      <li><a href="#scorecard" id="scorecardnav" onclick= "show_hide(event, 'scorecard', 'games', 'facts', 'leader', 'green', 'handicap'),changeclass(event, 'scorecardnav', 'gamesnav', 'factsnav', 'leadernav', 'greennav', 'handicapnav')">Virtual Scorecard</a></li>
-      <li><a href="#leader" id="leadernav" onclick= "show_hide(event, 'leader', 'facts', 'games', 'scorecard', 'handicap', 'green'), changeclass(event, 'leadernav', 'factsnav', 'gamesnav', 'scorecardnav', 'handicapnav', 'greennav')">World Rankings</a></li>
-      <li><a href="#facts" id="factsnav" onclick= "show_hide(event, 'facts', 'games', 'leader', 'scorecard', 'handicap', 'green'), changeclass(event, 'factsnav', 'gamesnav', 'leadernav', 'scorecardnav', 'handicapnav', 'greennav')">Golf Trivia</a></li>
-      <li><a href="#games"id="gamesnav" onclick= "show_hide(event, 'games', 'facts', 'leader', 'scorecard', 'handicap', 'green'), changeclass(event, 'gamesnav', 'factsnav', 'leadernav', 'scorecardnav', 'handicapnav', 'greennav')">Games</a></li>
+      <li><a href="#green" class="active" id="greennav" onclick= "show_hide(event, 'green', 'handicap','facts', 'leader', 'scorecard'), changeclass(event, 'greennav', 'handicapnav','factsnav', 'leadernav', 'scorecardnav')">About</a></li>
+      <li><a href="#handicap" id="handicapnav" onclick= "show_hide(event, 'handicap','facts', 'leader', 'scorecard', 'green'), changeclass(event, 'handicapnav','factsnav', 'leadernav', 'scorecardnav', 'greennav')">Handicap Calculator</a></li>
+      <li><a href="#scorecard" id="scorecardnav" onclick= "show_hide(event, 'scorecard','facts', 'leader', 'green', 'handicap'), changeclass(event, 'scorecardnav','factsnav', 'leadernav', 'greennav', 'handicapnav')">Virtual Scorecard</a></li>
+      <li><a href="#leader" id="leadernav" onclick= "show_hide(event, 'leader', 'facts','scorecard', 'handicap', 'green'), changeclass(event, 'leadernav', 'factsnav','scorecardnav', 'handicapnav', 'greennav')">World Rankings</a></li>
+      <li><a href="#facts" id="factsnav" onclick= "show_hide(event, 'facts','leader', 'scorecard', 'handicap', 'green'), changeclass(event, 'factsnav','leadernav', 'scorecardnav', 'handicapnav', 'greennav')">Golf Trivia</a></li>
     </ul>
 
   </div>
@@ -87,74 +86,6 @@
         </div>
         </form>  
 
-
-      
-      
-    </div>
-    
-      <div id="games">
-      
-        <p>The average golfer goes through over 100 golf balls a year.  
-          
-          <button onclick="">True</button>
-          <button onclick="">False</button>
-        </p>
-
-        <p>The average professional golfer will hit about 500 golf balls—per day. This is not counting chipping and putting.
-
-          <button onclick="">True</button>
-          <button onclick="">False</button>
-        </p>
-
-        <p>Golf is one of two sports that has been played on the moon. The other sport is badminton.
-
-          <button onclick="">True</button>
-          <button onclick="">False</button>
-        </p>
-
-        <p>Phil Michelson is actually right-handed. He just learned to play left-handed by imitating his father.
-
-          <button onclick="">True</button>
-          <button onclick="">False</button>
-        </p>
-
-        <p>The youngest golfer ever recorded to successfully shoot a hole in one was 3 years old.
-
-          <button onclick="">True</button>
-          <button onclick="">False</button>
-        </p>
-        <p>Only 30% of golfers can break the score of 90 on the course.
-
-          <button onclick="">True</button>
-          <button onclick="">False</button>
-        </p>
-        <p>Upon reaching the putting green, a player may change his ball for the putt.
-
-          <button onclick="">True</button>
-          <button onclick="">False</button>
-        </p>
-        <p>John Rahm won the 2023 PGA Championship.
-
-          <button onclick="">True</button>
-          <button onclick="">False</button>
-        </p>
-        <p>The PGA Championship first-place check has grown 539,900 percent
-
-          <button onclick="">True</button>
-          <button onclick="">False</button>
-        </p>
-        
-      
-      
-      </div>
-      <div id="facts">
-        <h1><img src="img/quiz.png" alt="quiz" style="vertical-align:middle"/>Golf Trivia<img src="img/quiz.png" alt="quiz" style="vertical-align:middle"/></h1>
-<div class="quiz-container">
-  <div id="quiz"></div>
-</div>
-<button id="previous">Previous Question</button>
-<button id="next">Next Question</button>
-<button id="submit">Submit Quiz</button>
 
 <div id="results"></div>
     </div>

@@ -118,25 +118,6 @@ p {
   text-align: center;
 }
 
-#games {
-  display: none;
-  flex-direction: column;
-  background-color: rgb(214, 211, 211);
-  border-style: solid;
-  width: 74%;
-  text-align: left;
-  margin-top: 4px;
-  padding: 10px 30px 30px 30px;
-  border-radius: 10px;
-}
-
-#games p {
-  background-color: white;
-  border-radius: 4px;
-  padding: 6px 6px 6px 6px;
-  border-style: solid;
-}
-
 #form {
   display: flex;
   flex-direction: column;
@@ -292,9 +273,6 @@ table {
 #leader {
   animation: transitionIn 3s;
 }
-#games {
-  animation: transitionIn 3s;
-}
 #scorecard {
   animation: transitionIn 3s;
 }
@@ -372,11 +350,7 @@ table {
     font-size: 70%;
   }
 
-  #games h4,
-  h5,
-  h6 {
-    font-size: 70%;
-  }
+
 
   #handicap h3 {
     font-size: 70%;

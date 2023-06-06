@@ -206,7 +206,6 @@ function changeclass(
   inputIdOff2,
   inputIdOff3,
   inputIdOff4,
-  inputIdOff5
 ) {
   event.preventDefault();
   const change = document.getElementById(inputId);
@@ -219,8 +218,6 @@ function changeclass(
   others3.classList.remove("active");
   const others4 = document.getElementById(inputIdOff4);
   others4.classList.remove("active");
-  const others5 = document.getElementById(inputIdOff5);
-  others5.classList.remove("active");
 }
 
 function show_hide(
@@ -230,7 +227,6 @@ function show_hide(
   inputIdNone2,
   inputIdNone3,
   inputIdNone4,
-  inputIdNone5
 ) {
   event.preventDefault();
   {
@@ -239,7 +235,6 @@ function show_hide(
     document.getElementById(inputIdNone2).style.display = "none";
     document.getElementById(inputIdNone3).style.display = "none";
     document.getElementById(inputIdNone4).style.display = "none";
-    document.getElementById(inputIdNone5).style.display = "none";
 
     return;
   }
