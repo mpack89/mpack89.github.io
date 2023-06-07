@@ -12,11 +12,11 @@
 
     <div id="nav">
     <ul> 
-      <li><a href="#green" class="active" id="greennav" onclick= "show_hide(event, 'green', 'handicap','facts', 'leader', 'scorecard'), changeclass(event, 'greennav', 'handicapnav','factsnav', 'leadernav', 'scorecardnav')">About</a></li>
-      <li><a href="#handicap" id="handicapnav" onclick= "show_hide(event, 'handicap','facts', 'leader', 'scorecard', 'green'), changeclass(event, 'handicapnav','factsnav', 'leadernav', 'scorecardnav', 'greennav')">Handicap Calculator</a></li>
-      <li><a href="#scorecard" id="scorecardnav" onclick= "show_hide(event, 'scorecard','facts', 'leader', 'green', 'handicap'), changeclass(event, 'scorecardnav','factsnav', 'leadernav', 'greennav', 'handicapnav')">Virtual Scorecard</a></li>
-      <li><a href="#leader" id="leadernav" onclick= "show_hide(event, 'leader', 'facts','scorecard', 'handicap', 'green'), changeclass(event, 'leadernav', 'factsnav','scorecardnav', 'handicapnav', 'greennav')">World Rankings</a></li>
-      <li><a href="#facts" id="factsnav" onclick= "show_hide(event, 'facts','leader', 'scorecard', 'handicap', 'green'), changeclass(event, 'factsnav','leadernav', 'scorecardnav', 'handicapnav', 'greennav')">Golf Trivia</a></li>
+      <li><a href="#green" class="active" id="greennav" onclick= "show_hide(event,'green', 'handicap','facts', 'leader', 'scorecard'), changeclass(event, 'greennav', 'handicapnav','factsnav', 'leadernav', 'scorecardnav')">About</a></li>
+      <li><a href="#handicap" id="handicapnav" onclick= "show_hide(event,'handicap','facts', 'leader', 'scorecard', 'green'), changeclass(event, 'handicapnav','factsnav', 'leadernav', 'scorecardnav', 'greennav')">Handicap Calculator</a></li>
+      <li><a href="#scorecard" id="scorecardnav" onclick= "show_hide(event,'scorecard','facts', 'leader', 'green', 'handicap'), changeclass(event, 'scorecardnav','factsnav', 'leadernav', 'greennav', 'handicapnav')">Virtual Scorecard</a></li>
+      <li><a href="#leader" id="leadernav" onclick= "show_hide(event,'leader', 'facts','scorecard', 'handicap', 'green'), changeclass(event, 'leadernav', 'factsnav','scorecardnav', 'handicapnav', 'greennav')">World Rankings</a></li>
+      <li><a href="#facts" id="factsnav" onclick= "show_hide(event,'facts','leader', 'scorecard', 'handicap', 'green'), changeclass(event, 'factsnav','leadernav', 'scorecardnav', 'handicapnav', 'greennav')">Golf Trivia</a></li>
     </ul>
 
   </div>
@@ -69,6 +69,7 @@
           Enter your strokes above par per round, for the last 12 rounds you've
           played
         </p>
+
       
         <form id="form">
           <div id="golf">
@@ -83,12 +84,23 @@
           <button onclick="calculate(event)">Calculate Handicap</button> 
           <input type="text" id="txtSum" value="0" disabled/><br/><br/>
           </div>
-        </div>
         </form>  
+       </div>
+       </div>
+       
+        <div id="facts">
+          <h1>Golf Trivia</h1>
+          <h1><img src="img/quiz.png" alt="quiz" style="vertical-align:middle"/>Golf Trivia<img src="img/quiz.png" alt="quiz" style="vertical-align:middle"/></h1>
+  <div class="quiz-container">
+    <div id="quiz"></div>
+  </div>
+  <button id="previous">Previous Question</button>
+  <button id="next">Next Question</button>
+  <button id="submit">Submit Quiz</button>
+  <div id="results"></div>
+      </div>
 
-
-<div id="results"></div>
-    </div>
+      
     <div id="leader">
       <h1><img src="img/icons8-live-48 (1).png" alt="towers" style="vertical-align:middle"/>Live World Rankings<img src="img/icons8-live-48 (1).png" alt="towers" style="vertical-align:middle"/></h1>
       <table id="myTable">
@@ -377,5 +389,5 @@
      </div>
      <script src="/script.js"></script>
     </body>
-</body>
+
 </html>
