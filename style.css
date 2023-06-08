@@ -416,6 +416,10 @@ table {
   text-align: center;
   margin-bottom: 4px;
   font-family: sans-serif;
+  background-color: white;
+  border: black;
+  border-style: solid;
+  border-radius: 10px
   
 }
 #facts h1 img {
@@ -435,7 +439,7 @@ table {
   text-align: center;
   display: inline-block;
   color: black;
-  background-color: rgb(235, 231, 231);
+  background-color: white;
   border: black;
   border-style: solid;
   width: 30%;
@@ -445,6 +449,7 @@ table {
   font-style: italic;
   border-radius: 6px;
   margin-top: 50px;
+
 
 }
 #facts .answers label {
