@@ -205,18 +205,30 @@ input[type="text"] {
   margin-top: 30px;
 }
 
+#leader h1 img {
+  animation: blinking 1s infinite;
+}
+
+@keyframes blinking {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1.5;
+  }
+}
 #leader h1 {
-
-font-family: Georgia, Times, 'Times New Roman', serif;
-
+  font-family: Georgia, Times, "Times New Roman", serif;
 }
 
 #leader table {
-
   background-color: white;
   color: black;
   text-align: left;
-  
+
   border-bottom: 0;
 }
 
@@ -350,8 +362,6 @@ table {
     font-size: 70%;
   }
 
-
-
   #handicap h3 {
     font-size: 70%;
   }
@@ -386,18 +396,16 @@ table {
     .table-responsive > .table {
       margin-bottom: 0;
     }
-    
+
     .table-responsive > thead > tr > th,
     .table-responsive > tbody > tr > th,
     .table-responsive > tfoot > tr > th,
     .table-responsive > thead > tr > th,
-    .table-responsive > tbody > tr > th
+    .table-responsive > tbody > tr > th;
   }
 }
 
-
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600);
-
 
 #facts body {
   font-size: 20px;
@@ -419,8 +427,7 @@ table {
   background-color: white;
   border: black;
   border-style: solid;
-  border-radius: 10px
-  
+  border-radius: 10px;
 }
 #facts h1 img {
   display: inline-block;
@@ -449,17 +456,15 @@ table {
   font-style: italic;
   border-radius: 6px;
   margin-top: 50px;
-
-
 }
 #facts .answers label {
   display: block;
   margin-bottom: 6px;
 }
 #facts button {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande";
   font-size: 14px;
-  background-color:rgb(122, 122, 122);
+  background-color: rgb(122, 122, 122);
   color: #fff;
   border: 0px;
   border-radius: 10px;
