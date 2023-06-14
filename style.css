@@ -513,3 +513,15 @@ table {
   border-radius: 10px;
   display: none;
 }
+
+#design {
+
+  font-size: xx-small;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 44%;
+  
+  
+  
+}
