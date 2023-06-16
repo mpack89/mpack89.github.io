@@ -378,9 +378,8 @@ table {
     font-size: 70%;
     width: 60%;
   }
-  
-  #quiz-container {
 
+  #quiz-container {
     width: 60%;
   }
 }
@@ -498,18 +497,15 @@ table {
   position: relative;
   height: 300px;
   margin-top: 0px;
-  
 }
 .flex-container {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  
 }
 .flex-container > div {
   margin-top: 0px;
   padding: 0px;
-
 }
 #buttons {
   margin-top: 240px;
@@ -525,13 +521,9 @@ table {
 }
 
 #design {
-
   font-size: xx-small;
   text-align: center;
   position: fixed;
   bottom: 0;
   left: 44%;
-  
-  
-  
 }

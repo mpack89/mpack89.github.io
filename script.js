@@ -205,7 +205,7 @@ function changeclass(
   inputIdOff,
   inputIdOff2,
   inputIdOff3,
-  inputIdOff4,
+  inputIdOff4
 ) {
   event.preventDefault();
   const change = document.getElementById(inputId);
@@ -226,7 +226,7 @@ function show_hide(
   inputIdNone,
   inputIdNone2,
   inputIdNone3,
-  inputIdNone4,
+  inputIdNone4
 ) {
   event.preventDefault();
   {
@@ -284,7 +284,7 @@ function show_hide(
         answerContainers[questionNumber].style.color = "green";
       } else {
         answerContainers[questionNumber].style.color = "red";
-       }
+      }
     });
 
     resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
