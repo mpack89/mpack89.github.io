@@ -375,8 +375,7 @@ table {
   }
 
   #facts {
-    font-size: 70%;
-    width: 60%;
+    height: 100vh;
   }
 
   #quiz-container {
