@@ -379,20 +379,7 @@ table {
     width: 60%;
   }
 
-  #green {
-    width: 100%;
-    font-size: 120%;
-  }
-  #handicap {
-    width: 100%;
 
-  }
-  #leaderboard {
-    width: 100%;
-  }
-  #facts {
-    width: 100%;
-  }
 
 }
 @media (max-width: 1200px) {
