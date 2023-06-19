@@ -494,7 +494,7 @@ table {
 }
 #facts .quiz-container {
   position: relative;
-  height: 300px;
+  height: 400px;
   margin-top: 0px;
 }
 .flex-container {
@@ -507,7 +507,7 @@ table {
   padding: 0px;
 }
 #buttons {
-  margin-top: 240px;
+  margin-top: 340px;
 }
 #facts {
   background-color: rgb(214, 211, 211);
