@@ -42,6 +42,7 @@ body {
 
 #green {
   position: relative;
+  
 }
 
 #green h1 {
@@ -371,17 +372,11 @@ table {
     width: 20%;
   }
 
- #nav ul {
+  #nav ul {
     width: 60%;
   }
-
-#nav ul {
-    width: 60%;
-  }
-
-
-
 }
+
 @media (max-width: 1200px) {
   .table-responsive {
     width: 100%;
@@ -471,7 +466,7 @@ table {
   padding: 10px;
   cursor: pointer;
   font-weight: 100;
-  margin-top: 10px;
+  margin-top: 340px;
 }
 #facts button:hover {
   background-color: rgb(37, 37, 37);
@@ -505,13 +500,11 @@ table {
   margin-top: 0px;
   padding: 0px;
 }
-#buttons {
-  margin-top: 340px;
-}
+
 #facts {
   background-color: rgb(214, 211, 211);
   border-style: solid;
-  width: 60%;
+  width: 54%;
   margin-top: 80px;
   padding: 10px 30px 30px 30px;
   border-radius: 10px;
