@@ -375,6 +375,10 @@ table {
     width: 60%;
   }
 
+#nav ul {
+    width: 60%;
+  }
+
   #green {
     width: 100%;
     font-size: 120%;
@@ -388,8 +392,9 @@ table {
   }
   #facts {
     width: 100%;
-}
+  }
 
+}
 @media (max-width: 1200px) {
   .table-responsive {
     width: 100%;
