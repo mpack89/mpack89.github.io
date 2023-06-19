@@ -374,11 +374,14 @@ table {
     width: 60%;
   }
 
- 
+  #facts {
+    height: 100vh;
+  }
 
   #quiz-container {
     width: 60%;
   }
+}
 
 @media (max-width: 800px) {
   .table-responsive {
