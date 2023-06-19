@@ -383,7 +383,7 @@ table {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
   .table-responsive {
     width: 100%;
     margin-bottom: 15px;
