@@ -380,10 +380,6 @@ table {
     width: 60%;
   }
 
-  #leader {
-  width: 60vw;
-}
-
 @media (max-width: 800px) {
   .table-responsive {
     width: 100%;
