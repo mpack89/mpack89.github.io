@@ -379,6 +379,9 @@ table {
   #quiz-container {
     width: 60%;
   }
+
+  #leader {
+  width: 100vw;
 }
 
 @media (max-width: 800px) {
