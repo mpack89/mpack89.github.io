@@ -1,4 +1,3 @@
-
 body {
   background-color: white;
   text-align: center;
@@ -85,14 +84,14 @@ p {
 }
 
 #handicap {
-  background-color: rgb(214, 211, 211);
-  width: 40%;
+  background-color: #c6d2ed;
   text-align: center;
   margin-top: 4px;
   padding: 10px 30px 30px 30px;
   border-radius: 10px;
   border-style: solid;
   display: none;
+  width: 50%;
 }
 #handicap h2 img {
   display: inline-block;
@@ -102,7 +101,7 @@ p {
 #handicap p {
   color: black;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: white;
+  background-color:  #e7e6f7;
   border-radius: 6px;
   padding: 6px 6px;
   border-style: solid;
@@ -375,6 +374,7 @@ table {
   #nav ul {
     width: 60%;
   }
+
 }
 
 @media (max-width: 1200px) {
@@ -405,7 +405,7 @@ table {
   color: #333;
   font-weight: 300;
   text-align: center;
-  background-color: #f8f6f0;
+ 
 }
 #facts h1 {
   font-weight: 600;
@@ -416,7 +416,7 @@ table {
   text-align: center;
   margin-bottom: 0px;
   font-family: sans-serif;
-  background-color: white;
+  background-color: #e7e6f7;
   border: black;
   border-style: solid;
   border-radius: 10px;
@@ -441,7 +441,7 @@ table {
   text-align: center;
   display: inline-block;
   color: black;
-  background-color: white;
+  background-color: #e7e6f7;
   border: black;
   border-style: solid;
   width: 30%;
@@ -502,7 +502,7 @@ table {
 }
 
 #facts {
-  background-color: rgb(214, 211, 211);
+  background-color: #c6d2ed;
   border-style: solid;
   width: 54%;
   margin-top: 80px;
