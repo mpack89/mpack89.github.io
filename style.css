@@ -41,7 +41,6 @@ body {
 
 #green {
   position: relative;
-  
 }
 
 #green h1 {
@@ -101,7 +100,7 @@ p {
 #handicap p {
   color: black;
   font-family: Arial, Helvetica, sans-serif;
-  background-color:  #e7e6f7;
+  background-color: #e7e6f7;
   border-radius: 6px;
   padding: 6px 6px;
   border-style: solid;
@@ -142,6 +141,10 @@ input[type="text"] {
   border-radius: 14px;
 }
 
+#form button:hover {
+  background-color: rgb(173, 172, 172);
+  cursor: pointer;
+}
 #handi {
   display: block;
 }
@@ -374,7 +377,6 @@ table {
   #nav ul {
     width: 60%;
   }
-
 }
 
 @media (max-width: 1200px) {
@@ -405,7 +407,6 @@ table {
   color: #333;
   font-weight: 300;
   text-align: center;
- 
 }
 #facts h1 {
   font-weight: 600;
@@ -457,19 +458,21 @@ table {
   margin-bottom: 0px;
 }
 #facts button {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande";
-  font-size: 14px;
-  background-color: rgb(122, 122, 122);
-  color: #fff;
-  border: 0px;
-  border-radius: 10px;
-  padding: 10px;
+  background-color: silver;
+  color: black;
+  padding: 10px 26px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
   cursor: pointer;
-  font-weight: 100;
+  width: 20%;
+  border-radius: 14px;
   margin-top: 340px;
 }
 #facts button:hover {
-  background-color: rgb(37, 37, 37);
+  background-color: rgb(173, 172, 172);
   cursor: pointer;
 }
 
