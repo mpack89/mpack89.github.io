@@ -426,7 +426,7 @@ table {
 }
 #facts h1 img {
   display: inline-block;
-  margin: 20px 20px;
+  margin: 12px 12px;
 }
 #facts .question {
   font-size: 20px;
@@ -507,7 +507,7 @@ table {
 #facts {
   background-color: #c6d2ed;
   border-style: solid;
-  width: 54%;
+  width: 62%;
   margin-top: 80px;
   padding: 10px 30px 30px 30px;
   border-radius: 10px;
