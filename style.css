@@ -363,6 +363,7 @@ table {
 
   #green img {
     width: 100%;
+    height: 100%;
   }
 
   #green h1 {
@@ -371,18 +372,22 @@ table {
 
   #handicap {
     width: 100%;
+    height: 100%;
   }
 
   #scorecard {
     width: 100%;
+    height: 100%;
   }
 
   #leader {
     width: 100%;
+    height: 100%;
   }
 
   #facts {
     width: 100%;
+    height: 100%;
   }
 
 
