@@ -347,37 +347,50 @@ table {
 }
 
 @media (max-width: 600px) {
-  p {
-    font-size: 70%;
-  }
-
-  h1,
-  h2 {
-    font-size: 70%;
-  }
-
-  #handicap h3 {
-    font-size: 70%;
-  }
-
-  #facts h9 {
-    font-size: 70%;
-  }
-
-  ul {
-    font-size: 70%;
-  }
-
-  #handi button,
-  #entry button {
-    font-size: 20%;
-    width: 20%;
+  #green-text {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    color: white;
+    top: 64%;
+    left: 57%;
+    transform: translate(-44%, -44%);
   }
 
   #nav ul {
-    width: 60%;
+    width: 100%;
   }
+
+  #green img {
+    width: 100%;
+  }
+
+  #green h1 {
+    font-size: 100%;
+  }
+
+  #handicap {
+    width: 100%;
+  }
+
+  #scorecard {
+    width: 100%;
+  }
+
+  #leader {
+    width: 100%;
+  }
+
+  #facts {
+    width: 100%;
+  }
+
+
+
 }
+
+
+
 
 @media (max-width: 1200px) {
   .table-responsive {
@@ -514,10 +527,3 @@ table {
   display: none;
 }
 
-#design {
-  font-size: xx-small;
-  text-align: center;
-  position: fixed;
-  bottom: 0;
-  left: 44%;
-}
