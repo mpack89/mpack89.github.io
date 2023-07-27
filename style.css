@@ -397,7 +397,7 @@ table {
 
 
 
-@media (max-width: 1200px) {
+@media (max-width: 300px) {
   .table-responsive {
     width: 100%;
     margin-bottom: 15px;
