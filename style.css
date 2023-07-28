@@ -471,6 +471,7 @@ table {
 
   #green img {
     width: 100%;
+    height: 100vh;
   }
 
   #green h1 {
@@ -479,6 +480,7 @@ table {
 
   #handicap {
     width: 100%;
+    height: 100vh;
   }
 
   #scorecard {
@@ -487,10 +489,12 @@ table {
 
   #leader {
     width: 100%;
+    height: 100vh;
   }
 
   #facts {
     width: 100%;
+    height: 100vh;
   }
 
 
