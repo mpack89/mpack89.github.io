@@ -480,7 +480,7 @@ table {
 
   #handicap {
     width: 100%;
-    height: 100vh;
+    
   }
 
   #scorecard {
@@ -489,12 +489,12 @@ table {
 
   #leader {
     width: 100%;
-    height: 100vh;
+    
   }
 
   #facts {
     width: 100%;
-    height: 100vh;
+    
   }
   #leader table {
     height: 100vh;
