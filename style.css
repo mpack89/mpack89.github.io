@@ -483,6 +483,7 @@ table {
   #green {
   position: relative;
   text-align: center;
+  width: 100%;
   }
   #green img {
   max-width: 100%;
