@@ -501,6 +501,7 @@ table {
       top: 64%;
       left: 64%;
       transform: translate(-44%, -44%);
+      font-size: 120%;
     }
     
     #green h1 {
@@ -508,6 +509,7 @@ table {
     top: -80%;
     left: 28%;
     transform: translate(-50%, -50%);
+    font-size: 120%;
     }
 
 
