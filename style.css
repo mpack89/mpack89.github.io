@@ -461,9 +461,6 @@ table {
 }
 
 @media (max-width: 1200px) {
-  #green-text {
-    width: 100%;
-  }
   
   #nav li a {
   display: inline-block;
