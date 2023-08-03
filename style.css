@@ -271,20 +271,20 @@ table {
 }
 
 #handicap {
-  animation: transitionIn 3s;
+  animation: transitionIn 1.5s;
 }
 #facts {
-  animation: transitionIn 3s;
+  animation: transitionIn 1.5s;
 }
 #leader {
-  animation: transitionIn 3s;
+  animation: transitionIn 1.5s;
 }
 #scorecard {
-  animation: transitionIn 3s;
+  animation: transitionIn 1.5s;
 }
 
 #green {
-  animation: transitionIn 3s;
+  animation: transitionIn 1.5s;
 }
 
 @keyframes transitionIn {
