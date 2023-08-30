@@ -55,8 +55,8 @@ function calculate(event) {
 const options = {
   method: "GET",
   headers: {
-    'X-RapidAPI-Key': '2f64b2619fmsh92d72f49877053cp1bf074jsn81db7c668171',
-		'X-RapidAPI-Host': 'golf-leaderboard-data.p.rapidapi.com',
+    "X-RapidAPI-Key": "0bdfae4b32msh944cce92bea9b3ap1ab133jsn438ada11b9cb",
+    "X-RapidAPI-Host": "golf-leaderboard-data.p.rapidapi.com",
   },
 };
 
